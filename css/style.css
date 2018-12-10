@@ -1,11 +1,14 @@
 @font-face {
-    font-family: 'arboria-bold';
+    font-family: 'Arboria';
+    src: url('../fonts/Arboria/Arboria/ttf/Arboria-Medium.ttf');
+
+    font-family: 'Arboria Bold';
     src: url('../fonts/arboria/arboria/ttf/arboria-bold.ttf');
 
-    font-family: 'arboria-light';
+    font-family: 'Arboria Light';
     src: url('../fonts/arboria/arboria/ttf/arboria-light.ttf');
 
-    font-family: 'axiforma';
+    font-family: 'Axiforma';
     src: url('../fonts/axiforma/kastelov - Axiforma Regular.otf');
 
     font-family: 'axiforma-light-italic';
@@ -16,8 +19,9 @@
 
 body {
     font-family: 'arboria';
-    background-color: #fcfcfc; 
+    background-color: #fcfcfc;
 }
+
 
 p {
     font-family: 'Cabin', sans-serif;
@@ -35,6 +39,69 @@ h1 h2 {
 
     header img {
         width: 100%;
+    }
+
+    /* Landing Page*/
+
+    .landing-page {
+        margin-top: 10%;
+    }
+
+    .landing-page h1 {
+        position: absolute;
+        font-size: 320%;
+        margin-top: 10%;
+        color: #ff6819;
+    }
+
+    .landing-page h2 {
+        font-family: 'axiforma-light-italic';
+        color: white;
+        opacity: 0.6;
+        position: absolute;
+        font-size: 90%;
+        margin-top: 45%;
+
+    }
+
+    .landing-page section {
+        margin-left: 10%;
+    }
+
+    .landing-page img {
+        width: 100%;
+        position: relative;
+        z-index: -1;
+    }
+
+    .landing-page ul {
+        font-family: 'Axiforma';
+        font-size: 13px;
+        line-height: 28px;
+        position: absolute;
+        text-align: right;
+        list-style: none;
+        bottom: 3%;
+        right: 4%;
+    }
+
+    .landing-page li {
+        border-style: solid;
+        border-color: transparent;
+        border-right-width: 3px;
+        border-right-color: #d1641d;
+        padding-right: 7px;
+    }
+
+    .landing-page a:link {
+        color: white;
+        opacity: 0.6;
+        text-decoration: none;
+    }
+
+    .landing-page a:hover {
+        color: #d1641d;
+        opacity: 1;
     }
 
     footer img {
@@ -62,9 +129,9 @@ h1 h2 {
          display: block;
     margin-left: auto;
     margin-right: auto;
-    
-  
-        
+
+
+
     }
 
     .aarhusrenseri {
