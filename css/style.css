@@ -1,14 +1,14 @@
 @font-face {
-    font-family: 'Arboria';
+    font-family: 'arboria';
     src: url('../fonts/Arboria/Arboria/ttf/Arboria-Medium.ttf');
 
-    font-family: 'Arboria Bold';
+    font-family: 'arboria-bold';
     src: url('../fonts/arboria/arboria/ttf/arboria-bold.ttf');
 
-    font-family: 'Arboria Light';
+    font-family: 'arboria-light';
     src: url('../fonts/arboria/arboria/ttf/arboria-light.ttf');
 
-    font-family: 'Axiforma';
+    font-family: 'axiforma';
     src: url('../fonts/axiforma/kastelov - Axiforma Regular.otf');
 
     font-family: 'axiforma-light-italic';
@@ -17,19 +17,25 @@
 
 }
 
+/* ------------- GENERELT ------------- */
+
 body {
-    font-family: 'arboria';
+    font-family: 'arboria-bold', sans-serif;
     background-color: #fcfcfc;
 }
 
 
 p {
     font-family: 'Cabin', sans-serif;
+    margin: 5%;
 }
 
-h1 h2 {
-    font-family: 'arboria-bold'
+h1,
+h2 {
+    font-family: 'arboria-bold', sans-serif;
 }
+
+/* -------- CleanSneaks Århus ------ */
 
 
 
@@ -41,7 +47,7 @@ h1 h2 {
         width: 100%;
     }
 
-    /* Landing Page*/
+    /* Landing Page */
 
     .landing-page {
         margin-top: 10%;
@@ -65,7 +71,7 @@ h1 h2 {
     }
 
     .landing-page section {
-        margin-left: 10%;
+        margin-left: 5%
     }
 
     .landing-page img {
@@ -108,6 +114,23 @@ h1 h2 {
         width: 100%;
     }
 
+    /* Hvem er vi? */
+
+    .hvem-er-vi h2 {
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+        margin: 5%;
+    }
+
+    .hvem-er-vi img {
+        width: 100%;
+    }
+    
+    /* Så nemt er det */
+    
+    
+
+
 
     /*Styles til landingpage mobil*/
 
@@ -126,9 +149,9 @@ h1 h2 {
 
     .webshop {
         width: 93%;
-         display: block;
-    margin-left: auto;
-    margin-right: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
 
 
 
@@ -155,10 +178,6 @@ h1 h2 {
     margin-top: 25%
 }
 
-p {
-    margin: 5%; text-align: center;
-}
-
 #streetfyr {
     width: 60%;
     display: block;
@@ -168,8 +187,20 @@ p {
 }
 
 
-.citat {margin-top: 15%; font-style: italic;}
-.citatdennis {font-weight: bold;}
-.storysneaks {width: 45%; margin-left: 4%}
+.citat {
+    margin-top: 15%;
+    font-style: italic;
+}
 
-.storypige {width: 45%;}
+.citatdennis {
+    font-weight: bold;
+}
+
+.storysneaks {
+    width: 45%;
+    margin-left: 4%
+}
+
+.storypige {
+    width: 45%;
+}
