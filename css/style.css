@@ -16,11 +16,18 @@
 
 body {
     font-family: 'arboria';
+    background-color: #fcfcfc; 
 }
 
 p {
     font-family: 'Cabin', sans-serif;
 }
+
+h1 h2 {
+    font-family: 'arboria-bold'
+}
+
+
 
 /* Mobil */
 
@@ -34,4 +41,68 @@ p {
         width: 100%;
     }
 
+
+    /*Styles til landingpage mobil*/
+
+
+    .landingoverskrift {
+        font-family: 'axiforma';
+    }
+
+
+
+    /*landingpagemenu*/
+
+    #landingmenu {
+        margin-top: 10%
+    }
+
+    .webshop {
+        width: 93%;
+         display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+  
+        
+    }
+
+    .aarhusrenseri {
+        width: 45%;
+        margin-left: 4%;
+        margin-top: 4%
+    }
+
+    .silkeborgrenseri {
+        width: 45%;
+    }
+
+
 }
+
+
+/*storytelling*/
+
+.landingoverskrift {
+    text-align: center;
+    margin-top: 25%
+}
+
+p {
+    margin: 5%; text-align: center;
+}
+
+#streetfyr {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15%
+}
+
+
+.citat {margin-top: 15%; font-style: italic;}
+.citatdennis {font-weight: bold;}
+.storysneaks {width: 45%; margin-left: 4%}
+
+.storypige {width: 45%;}
