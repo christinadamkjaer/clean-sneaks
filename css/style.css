@@ -102,7 +102,8 @@ h2 {
         padding-right: 7px;
     }
 
-    .landing-page a:link {
+    .landing-page a:link,
+    a:visited {
         color: white;
         opacity: 0.6;
         text-decoration: none;
@@ -131,12 +132,87 @@ h2 {
 
     /* Så nemt er det */
 
+    .saa-nemt-er-det h2 {
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+        margin: 5%;
+    }
+
+    .saa-nemt-er-det img {
+        width: 100%;
+    }
+
+    /* Tilbud og prisberegner */
+
+    .tilbud-og-prisberegner h2 {
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+        margin: 5%;
+    }
+
+    .tilbud-og-prisberegner h3 {
+        font-family: 'axiforma-light-italic';
+        margin: 5%;
+        font-size: 15px;
+
+    }
+
+    .tilbud {
+        display: grid;
+        grid-row-gap: 30px;
+        margin: 5%;
+    }
+
+    .tilbud img {
+        width: 100%
+    }
 
 
+    /* Anbefalinger */
 
+    .anbefalinger {
+        width: 100%;
+        background-color: #1f2022;
+        margin-top: 20%;
+        position: relative;
+    }
 
+    .anbefalinger h2 {
+        color: white;
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+        margin: 5%;
+        padding-top: 8%;
+        text-align: center;
+    }
+    
+    .anbefalinger iframe {
+        margin-left: 8%;
+    }
+    
+    .knap-hoejre {
+        color:#fff;
+        background-color: #1f2022;
+        border: none;
+        position: absolute;
+        padding: 10px;
+        top: 50%;
+        left: 92%;
+        transform: translate(0%, -50%);
+        -ms-transform: translate(-0%, -50%)
+    }
 
-
+    .knap-venstre {
+         color:#fff;
+        background-color: #1f2022;
+        border: none;
+        position: absolute;
+        padding: 10px;
+        top: 50%;
+        left: ;
+        transform: translate(0%, -50%);
+        -ms-transform: translate(-0%, -50%)
+    }
 
 
     /*--------------------------styles til clean sneaks forside------------------*/
@@ -172,41 +248,42 @@ h2 {
     }
 
     .silkeborgrenseri {
-        width: 44%; margin-left: 2.5%
+        width: 44%;
+        margin-left: 2.5%
     }
 
 
 
 
 
-/*storytelling*/
+    /*storytelling*/
 
 
 
 
-#streetfyr {
-    width: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 15%
-}
+    #streetfyr {
+        width: 60%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15%
+    }
 
 
-.citat {
-    margin-top: 15%;
-    font-style: italic;
-}
+    .citat {
+        margin-top: 15%;
+        font-style: italic;
+    }
 
-.citatdennis {
-    font-weight: bold;
-}
+    .citatdennis {
+        font-weight: bold;
+    }
 
-.storysneaks {
-    width: 45%;
-    margin-left: 4%
-}
+    .storysneaks {
+        width: 45%;
+        margin-left: 4%
+    }
 
-.storypige {
-    width: 45%;
-}
+    .storypige {
+        width: 45%;
+    }
