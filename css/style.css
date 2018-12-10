@@ -191,7 +191,7 @@ h2 {
     }
 
     .knap-hoejre {
-        color:#fff;
+        color: #fff;
         background-color: #1f2022;
         border: none;
         position: absolute;
@@ -203,7 +203,7 @@ h2 {
     }
 
     .knap-venstre {
-         color:#fff;
+        color: #fff;
         background-color: #1f2022;
         border: none;
         position: absolute;
@@ -217,21 +217,31 @@ h2 {
 
     /*--------------------------styles til clean sneaks forside------------------*/
 
+    /*generelt til forsiden*/
     .landingoverskrift {
         text-align: center;
-        margin-top: 25%;
-        font-size: 20px;
+        margin-top: 15%;
+        font-size: 150%;
     }
 
-    body {margin: 1%}
+    body {
+        margin: 1%
+    }
+
+    .landingp p {
+        text-align: center;
+    }
 
 
-    /*landingpagemenu*/
+    /*det første af landingpage/forsiden webshop, århus renseri og Silkeborg renseri */
 
     #landingmenu {
         margin-top: 10%
     }
 
+
+
+    /* webshop knappen*/
     .webshop {
         width: 91%;
         display: block;
@@ -242,31 +252,111 @@ h2 {
 
     }
 
-    .text-block {
-    position: absolute;
-    bottom: 56%;
-    right: 30%;
-    background-color: black;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-}
+    .tekst_webshop {
+        position: absolute;
+        bottom: 60%;
+        right: 30%;
+        background-color: #1f2022;
+        color: white;
+        padding-left: 8%;
+        padding-right: 8%;
 
-    .renserier {display: flex; width: 96%; flex-direction: row; margin-left: 4.5%; margin-top: 4.5%}
+    }
 
+    .tekst_webshop p {
+        font-size: 25px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+
+
+    #webshoppil {
+        color: #0000ff;
+        font-size;
+    }
+
+    .webshop:hover {
+        opacity: 0.3;
+    }
+
+
+
+
+    /* renserierne knapper*/
+
+    .renserier {
+        display: flex;
+        width: 96%;
+        flex-direction: row;
+        margin-left: 4.5%;
+        margin-top: 4.5%
+    }
+
+
+    /* Århus renseri knap*/
 
     .aarhusrenseri {
 
         width: 90%;
 
+
     }
 
+    .aarhusrenseri:hover {
+        opacity: 0.3;
+    }
+
+    .aarhus_tekst {
+        position: absolute;
+        bottom: 25%;
+        right: 57%;
+        background-color: #1f2022;
+        color: white;
+        padding-left: 6%;
+        padding-right: 6%;
+
+    }
+
+    .aarhus_tekst p {
+        font-size: 15px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+
+    /*Silkeborg renseri knap*/
+
     .silkeborgrenseri {
-        width: 44%;
+        width: 90%;
         margin-left: 2.5%
     }
 
+    .silkeborgrenseri:hover {
+        opacity: 0.3;
+    }
 
+
+    .silkeborg_tekst {
+        position: absolute;
+        bottom: 25%;
+        right: 6%;
+        background-color: #1f2022;
+        color: white;
+        padding-left: 3%;
+        padding-right: 3%;
+
+    }
+
+    .silkeborg_tekst p {
+        font-size: 15px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .renseripil {
+        color: #ff6819;
+    }
 
 
 
@@ -274,7 +364,7 @@ h2 {
 
 
 
-
+    /*første storytelling, deres why*/
     #streetfyr {
         width: 60%;
         display: block;
@@ -284,20 +374,30 @@ h2 {
     }
 
 
+    /*deres why, citat*/
     .citat {
-        margin-top: 15%;
+        margin-top: 16%;
         font-style: italic;
+
     }
 
     .citatdennis {
         font-weight: bold;
+        text-align: center;
     }
 
+
+    /*sidste storytelling*/
     .storysneaks {
         width: 45%;
-        margin-left: 4%
+        margin-left: 4%;
+        margin-top: 15%;
     }
 
     .storypige {
         width: 45%;
+    }
+
+    .footerlanding {
+        margin-top: 20%
     }
