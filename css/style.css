@@ -142,11 +142,12 @@ h2 {
     /*--------------------------styles til clean sneaks forside------------------*/
 
     .landingoverskrift {
-        font-family: 'axiforma';
         text-align: center;
-        margin-top: 25%
+        margin-top: 25%;
+        font-size: 20px;
     }
 
+    body {margin: 1%}
 
 
     /*landingpagemenu*/
@@ -164,15 +165,29 @@ h2 {
 
 
     }
+    
+    .text-block {
+    position: absolute;
+    bottom: 56%;
+    right: 30%;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+    
+    .renserier {display: flex; width: 96%; flex-direction: row; margin-left: 4.5%; margin-top: 4.5%}
+    
 
     .aarhusrenseri {
-        width: 44%;
-        margin-left: 4%;
-        margin-top: 4%
+
+        width: 90%;
+        
     }
 
     .silkeborgrenseri {
-        width: 44%; margin-left: 2.5%
+
+        width: 90%; 
     }
 
 
@@ -204,7 +219,8 @@ h2 {
 
 .storysneaks {
     width: 45%;
-    margin-left: 4%
+    margin-left: 4%;
+    margin-top: 15%;
 }
 
 .storypige {
