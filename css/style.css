@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'arboria-bold';
+    src: url('../fonts/arboria/arboria/ttf/arboria-bold.ttf');
+
+    font-family: 'arboria-light';
+    src: url('../fonts/arboria/arboria/ttf/arboria-light.ttf');
+
+    font-family: 'axiforma';
+    src: url('../fonts/axiforma/kastelov - Axiforma Regular.otf');
+
+    font-family: 'axiforma-light-italic';
+    src: url('../fonts/axiforma/kastelov - Axiforma Light Italic.otf');
+
+
+}
+
+body {
+    font-family: 'arboria';
+}
+
+p {
+    font-family: 'Cabin', sans-serif;
+}
+
+/* Mobil */
+
+@media (max-width: 600px) {
+
+    header img {
+        width: 100%;
+    }
+
+    footer img {
+        width: 100%;
+    }
+
+}
