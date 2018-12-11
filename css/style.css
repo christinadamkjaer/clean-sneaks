@@ -297,9 +297,7 @@ h2,
         margin: 1%
     }
 
-    .landingp p {
-        text-align: ;
-    }
+   
 
 
 
@@ -559,10 +557,11 @@ h2,
 
 
 
-/*----------------DEKSTOP / STOR SKÆRM BEGYNDER HER -------------------*/
+/*----------------STØRRE SKÆRME-------------------*/
 
 @media all and (min-width: 601px) {
 
+    
     .mobilheader {
         display: none;
     }
@@ -572,8 +571,24 @@ h2,
     }
 
 
-    #landingmenu {
-        display: flex;
-
-
+   
+    
+    
+    
+    footer {background-color: #f1f1f1;}
+    
+   
+    .facebook {width: 5%;}
+    .instagram {width: 5%;}
+    .nyheddesk {display: flex; justify-content: center;} }
+    
+    
+   /*----------------HELT STORE SKÆRME-------------------*/ 
+    
+    
+    @media all and (min-width: 1010px) {
+        
+        body {background-color: red;}
+        
     }
+    
