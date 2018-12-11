@@ -31,7 +31,7 @@ p {
 }
 
 h1,
-h2 {
+h2, {
     font-family: 'arboria-bold', sans-serif;
 }
 
@@ -414,12 +414,35 @@ h2 {
         width: 45%;
     }
 
-  /*  .footerlanding {
-        margin-top: 20%
-    }
-
-     #landinglink {color: #0303d7;}
+      #landinglink {color: #0303d7;}
 
     #landinglink1 {color: #ff6819;}
 
      #landinglink2 {color: #ff6819;}
+    
+    
+    
+/*footer med nyhedsbrev*/
+    
+  .footerlanding {
+        margin-top: 20%;
+      margin-left: none; margin-right: none;
+      background-color: #f1f1f1;
+    }
+
+    
+    .nyhedsbrev {padding-top: 5%; text-align: center;}
+    
+    .tekstfelt {display: flex; flex-direction: column;}
+    
+    .navn {width: 50%; margin-left: 25%;}
+    
+    .mail {width: 50%; margin-left: 25%; margin-top: 5%;}
+    
+    .tilmeldknap {margin-top: 5%; padding: 3%; padding-left: 6%; padding-right: 6%; margin-left: 38%; color: white; background-color: #1f2022; border: none;}
+
+    .footercleansneaks { text-align: center; margin-top: 10%;}
+    
+    
+    .some {display: flex; width: 20%;}
+    
