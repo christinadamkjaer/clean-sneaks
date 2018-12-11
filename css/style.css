@@ -231,6 +231,13 @@ h2 {
         margin: 5%;
     }
 
+    #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
     /*--------------------------styles til clean sneaks forside------------------*/
 
     /*generelt til forsiden*/
@@ -268,11 +275,12 @@ h2 {
 
 
     .webshop_container {
-        position: relative; text-align: center;
+        position: relative;
+        text-align: center;
     }
 
     .tekst_webshop {
-       position: absolute;
+        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -281,7 +289,9 @@ h2 {
         padding-left: 10%;
         padding-right: 10%;
         padding-top: 2%;
-        border: solid; 5px; border-color: #0303d7;
+        border: solid;
+        5px;
+        border-color: #0303d7;
 
 
     }
@@ -324,7 +334,8 @@ h2 {
 
 
     .aarhuscontainer {
-        position: relative; text-align: center;
+        position: relative;
+        text-align: center;
     }
 
     .aarhus_tekst {
@@ -338,7 +349,8 @@ h2 {
         padding-left: 15%;
         padding-right: 15%;
         padding-top: 2%;
-         border: solid; border-color: #ff6819;
+        border: solid;
+        border-color: #ff6819;
 
 
 
@@ -362,8 +374,9 @@ h2 {
     }
 
 
-     .silkeborgcontainer {
-        position: relative; text-align: center;
+    .silkeborgcontainer {
+        position: relative;
+        text-align: center;
     }
 
     .silkeborg_tekst {
@@ -377,7 +390,8 @@ h2 {
         padding-left: 10%;
         padding-right: 10%;
         padding-top: 2%;
-        border: solid; border-color: #ff6819;
+        border: solid;
+        border-color: #ff6819;
     }
 
     .silkeborg_tekst p {
@@ -430,7 +444,7 @@ h2 {
         width: 45%;
     }
 
-  /*  .footerlanding {
+    /*  .footerlanding {
         margin-top: 20%
     }
 
