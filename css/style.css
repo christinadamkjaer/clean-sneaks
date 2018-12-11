@@ -222,7 +222,7 @@ h2 {
         text-align: center;
         margin-top: 15%;
         font-size: 150%;
-        
+
     }
 
     body {
@@ -238,8 +238,8 @@ h2 {
 
     #landingmenu {
         margin-top: 10%;
-       
-            
+
+
     }
 
 
@@ -247,10 +247,10 @@ h2 {
     /* webshop knappen*/
     .webshop {
         width: 91%;
-      
+
     }
-    
-    
+
+
     .webshop_container {
         position: relative; text-align: center;
     }
@@ -264,9 +264,9 @@ h2 {
         color: white;
         padding-left: 10%;
         padding-right: 10%;
-        padding-top: 2%; 
-        border: solid; 5px; border-color: #0303d7; 
-       
+        padding-top: 2%;
+        border: solid; 5px; border-color: #0303d7;
+
 
     }
 
@@ -280,10 +280,10 @@ h2 {
 
     #webshoppil {
         color: #0303d7;
-        
+
     }
 
-   
+
 
     /* renserierne knapper*/
 
@@ -292,7 +292,7 @@ h2 {
         width: 96%;
         margin-left: 1.5%;
         margin-top: 5%;
-       
+
     }
 
 
@@ -305,7 +305,7 @@ h2 {
 
     }
 
-  
+
 
     .aarhuscontainer {
         position: relative; text-align: center;
@@ -323,7 +323,7 @@ h2 {
         padding-right: 15%;
         padding-top: 2%;
          border: solid; border-color: #ff6819;
-        
+
 
 
     }
@@ -332,9 +332,9 @@ h2 {
         font-size: 100%;
         text-align: center;
         text-transform: uppercase;
-    
 
-        
+
+
     }
 
 
@@ -351,7 +351,7 @@ h2 {
     }
 
     .silkeborg_tekst {
-      
+
         position: absolute;
         top: 50%;
         left: 50%;
@@ -414,10 +414,10 @@ h2 {
         width: 45%;
     }
 
-    .footerlanding {
+  /*  .footerlanding {
         margin-top: 20%
     }
-    
+
      #landinglink {color: #0303d7;}
 
     #landinglink1 {color: #ff6819;}
