@@ -398,6 +398,56 @@ h2 {
         width: 45%;
     }
 
-    .footerlanding {
+  /*  .footerlanding {
         margin-top: 20%
-    }
+    }*/
+
+
+    .footerlanding
+    form {
+      margin-top: 20%;
+  border: 3px solid #f1f1f1;
+  font-family: 'Cabin', sans-serif;
+}
+/*overskrift til nyhedsbrev*/
+.nyhedoverskrift{
+  text-align: center;
+  margin-top: 15%;
+  font-size: 150%;
+}
+
+/*boksen nyhedsbrev*/
+.nyhedsbrev {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.tilmeld{
+  text-align: center;
+
+}
+
+  )
+/*styling felter med navn og email*/
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/*styling tilmeld knappen*/
+input [type=checkbox] {
+  margin-top: 16px;
+  background-color: #1f2022;
+  color: white;
+  border: none;
+}
+
+/*hover effekt på tilmeld nyhedsbrev*/
+input[type=submit]:hover {
+  opacity: 0.3;
+}
+
+/*sociale medier knapper*/
