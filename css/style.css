@@ -54,6 +54,7 @@ h2, {
 
     .landing-page {
         margin-top: 10%;
+        position: relative;
     }
 
     .landing-page h1 {
@@ -172,22 +173,25 @@ h2, {
 
     .anbefalinger {
         width: 100%;
-        background-color: #1f2022;
-        margin-top: 20%;
         position: relative;
+        padding-top: 100%;
     }
 
-    .anbefalinger h2 {
-        color: white;
+    .overskrift-anbefalinger {
         text-decoration: underline;
         text-decoration-color: #ff6819;
-        margin: 5%;
-        padding-top: 8%;
         text-align: center;
+        margin-top: 20%;
     }
 
-    .anbefalinger iframe {
-        margin-left: 8%;
+    .anbefaling {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        height: 100%;
+        border: 0;
+        transform: translate(12.5%, 0%);
     }
 
     .knap-hoejre {
@@ -199,7 +203,8 @@ h2, {
         top: 50%;
         left: 92%;
         transform: translate(0%, -50%);
-        -ms-transform: translate(-0%, -50%)
+        -ms-transform: translate(-0%, -50%);
+
     }
 
     .knap-venstre {
@@ -211,9 +216,20 @@ h2, {
         top: 50%;
         left: ;
         transform: translate(0%, -50%);
-        -ms-transform: translate(-0%, -50%)
+        -ms-transform: translate(-0%, -50%);
     }
 
+    /* Twenty-twenty slider */
+
+
+
+    /* Hvor er drop-off boksen? */
+
+    .hvor-er-boksen h2 {
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+        margin: 5%;
+    }
 
     /*--------------------------styles til clean sneaks forside------------------*/
 
