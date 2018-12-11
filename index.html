@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <!--dansk site = skriv da i "" herunder / engelsk site = skriv en i == herunder-->
@@ -28,7 +27,9 @@
 <body>
 
     <header>
-        <img src="images/prototype-header.jpg" alt="prototype header">
+        <img class="mobilheader" src="images/prototype-header.jpg" alt="prototype header">
+
+        <img class="deskheader" src="images/header_stor.jpg" alt="prototype header stor">
 
     </header>
 
@@ -40,68 +41,74 @@
 
             <!-- webshop billedet-->
 
-          <div class="webshop_container">
-               
-               <a href="webshop.html"> <img class="webshop" src="images/webshop.jpg" alt="Clean Sneaks Webshop"> </a>
-                
-                
-                <div class="tekst_webshop">
 
-                    <p>webshop</p>
-                    <p id="webshoppil">→</p>
+            <a href="webshop.html">
+                <div class="webshop_container">
 
+                    <img class="webshop" src="images/webshop.jpg" alt="Clean Sneaks Webshop">
+
+
+                    <div class="tekst_webshop">
+
+                        <p>webshop</p>
+                        <p id="webshoppil">→</p>
+
+                    </div>
                 </div>
-           </div>
+            </a>
+
+
 
 
             <div class="renserier">
 
 
                 <!-- århus renseri billedet-->
-             
-              <a href="cleansneaksaarhus.html">
-                      <div class="aarhuscontainer">
-                    
-                    <img class="aarhusrenseri" src="images/aarhus_renseri.jpg" alt="Clean Sneaks Århus renseri">  
-                    <div class="aarhus_tekst">
-                        
 
-                    <a href="cleansneaksaarhus.html"></a>    <p>Århus renseri</p>
-                        <p class="renseripil">→</p>
+                <a href="cleansneaksaarhus.html">
+                    <div class="aarhuscontainer">
+
+                        <img class="aarhusrenseri" src="images/aarhus_renseri.jpg" alt="Clean Sneaks Århus renseri">
+                        <div class="aarhus_tekst">
+                            <p>Århus renseri</p>
+                            <p class="renseripil">→</p>
+
+                        </div>
+
 
                     </div>
-                    
-
-                </div>
                 </a>
-                
+
+
 
 
                 <!-- Silkeborg renseri billedet-->
-                <div class="silkeborgcontainer">
-                   
-                   <a href="cleanssneakssilkeborg.html"> <img class="silkeborgrenseri" src="images/silkeborg_renseri.jpg" alt="Clean Sneaks Silkeborg renseri"></a>
-                   
-                    <div class="silkeborg_tekst">
-                        <p>Silkeborg Renseri</p>
-                        <p class="renseripil">→</p>
-                    </div>
+                <a href="cleanssneakssilkeborg.html">
+                    <div class="silkeborgcontainer">
 
-                </div>
+                        <img class="silkeborgrenseri" src="images/silkeborg_renseri.jpg" alt="Clean Sneaks Silkeborg renseri">
+
+                        <div class="silkeborg_tekst">
+                            <p>Silkeborg Renseri</p>
+                            <p class="renseripil">→</p>
+                        </div>
+
+                    </div>
+                </a>
 
             </div>
 
 
-
-
-
-
-
-            <!--Her begynder storytelling-->
-
-
         </section>
     </article>
+
+
+
+
+
+    <!--Her begynder storytelling-->
+
+
 
 
 
@@ -134,54 +141,58 @@
 
             <img class="storypige" src="images/storytelling_pige.jpg" alt="pige med hvide sneaks">
 
-            <h2 class="landingoverskrift">Renseri eller rens selv, you choose!</h2>
+            <h2 class="landingoverskrift">Renseri eller rens selv <br> - you choose!</h2>
 
-            <p>Hos Clean Sneaks vil vi gøre op med de beskidte sneaks. Om du er typen der renser selv eller lader andre gøre arbejdet, så har vi løsningen. Hop ind på vores <a id="landinglink" href="webshop.html">webshop</a> og tjek vores mange renseprodukter ud, eller gør brug af et af vores renserier i enten <a id="landinglink1" href="cleanssneakssilkeborg.html">Silkeborg</a> eller <a id="landinglink2" href="cleansneaksaarhus.html">Århus</a> Århus. Lige meget hvilken løsning du er til garanterer vi Clean Sneaks. </p>
+            <p>Hos Clean Sneaks vil vi gøre op med de beskidte sneaks. Om du er typen der renser selv eller lader andre gøre arbejdet, så har vi løsningen. Hop ind på vores <a id="landinglink" href="webshop.html">webshop</a> og tjek vores mange renseprodukter ud, eller gør brug af et af vores renserier i enten <a id="landinglink1" href="cleanssneakssilkeborg.html">Silkeborg</a> eller <a id="landinglink2" href="cleansneaksaarhus.html">Århus.</a> Lige meget hvilken løsning du er til garanterer vi Clean Sneaks. </p>
 
         </section>
 
     </article>
 
 
+    <!--footer-->
 
     <footer class="footerlanding">
-      <!--  <img src="images/prototype-footer-landing.jpg" alt="prototype footer">
-    </footer>-->
 
 
 
-    <form action="/action_page.php">
-  <div class="nyhedsbrev">
-    <h2 class="nyhedoverskrift">Nyhedsbrev</h2>
-    <p>Tilmeld dig vores nyhedsbrev, for de seneste nyheder og tilbud</p>
-  </div>
+        <!--nyhedsbrev begynder her-->
 
-  <div class="tekstfelt">
-    <input class="navn" type="text" placeholder="Name" name="name" required>
-    <input class="mail" type="text" placeholder="Email address" name="mail" required>
+        <form action="/action_page.php">
+            <div class="nyhedsbrev">
+                <h2 class="nyhedoverskrift">Nyhedsbrev</h2>
+                <p>Tilmeld dig vores nyhedsbrev, for de seneste nyheder og tilbud</p>
+            </div>
 
-  </div>
+            <div class="tekstfelt">
+                <input class="navn" type="text" placeholder="Name" name="name" required>
+                <input class="mail" type="text" placeholder="Email " name="mail" required>
 
-  <div class="tilmeld">
-    <input class="tilmeldknap" type="submit" value="Tilmeld">
-  </div>
-</form>
-   
-     <p class="footercleansneaks"> ©2013 Clean Sneaks <br> Privatlivspolitik & handelsbetingelser </p>
-     
-   <div class="some">
-   
-   <a href=""><img class="facebook" src="images/facebook_icon.png"> </a>
-    <a href=""></a>
-    
-    <a href=""> <img class="instagram" src="images/instagram_icon.png"> </a>
-   </div>
-   
- 
-    
+            </div>
+
+            <div class="tilmeld">
+                <input class="tilmeldknap" type="submit" value="Tilmeld">
+            </div>
+        </form>
+
+        <!--handelsbetingelser og privatlivspolitik-->
+        <p class="footercleansneaks"> ©2013 Clean Sneaks <br> Privatlivspolitik & handelsbetingelser </p>
+
+        <!--Sociale medier ikoner-->
+        <div class="some">
+
+
+            <a href=""><img class="facebook" src="images/facebook_icon.png"> </a>
+            <a href=""></a>
+
+            <a href=""> <img class="instagram" src="images/instagram_icon.png"> </a>
+        </div>
+
+
+
     </footer>
 
-<!--social medie ikoner i footer-->
+    <!--social medie ikoner i footer-->
 
 
     <!--Link til javascript-->
@@ -192,4 +203,5 @@
 
 
 </body>
+
 </html>

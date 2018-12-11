@@ -31,7 +31,8 @@ p {
 }
 
 h1,
-h2, {
+h2,
+    {
     font-family: 'arboria-bold', sans-serif;
 }
 
@@ -44,8 +45,12 @@ h2, {
 @media (max-width: 600px) {
 
 
-    header img {
+    .mobilheader {
         width: 100%;
+    }
+
+    .deskheader {
+        display: none;
     }
 
 
@@ -249,6 +254,8 @@ h2, {
         text-align: ;
     }
 
+    
+
 
     /*det første af landingpage/forsiden webshop, århus renseri og Silkeborg renseri */
 
@@ -263,16 +270,16 @@ h2, {
     /* webshop knappen*/
     .webshop {
         width: 91%;
-
+    
     }
 
-
     .webshop_container {
-        position: relative; text-align: center;
+        position: relative;
+        text-align: center;
     }
 
     .tekst_webshop {
-       position: absolute;
+        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -281,7 +288,9 @@ h2, {
         padding-left: 10%;
         padding-right: 10%;
         padding-top: 2%;
-        border: solid; 5px; border-color: #0303d7;
+        border: solid;
+        5px;
+        border-color: #0303d7;
 
 
     }
@@ -324,7 +333,8 @@ h2, {
 
 
     .aarhuscontainer {
-        position: relative; text-align: center;
+        position: relative;
+        text-align: center;
     }
 
     .aarhus_tekst {
@@ -338,7 +348,8 @@ h2, {
         padding-left: 15%;
         padding-right: 15%;
         padding-top: 2%;
-         border: solid; border-color: #ff6819;
+        border: solid;
+        border-color: #ff6819;
 
 
 
@@ -362,8 +373,9 @@ h2, {
     }
 
 
-     .silkeborgcontainer {
-        position: relative; text-align: center;
+    .silkeborgcontainer {
+        position: relative;
+        text-align: center;
     }
 
     .silkeborg_tekst {
@@ -377,7 +389,8 @@ h2, {
         padding-left: 10%;
         padding-right: 10%;
         padding-top: 2%;
-        border: solid; border-color: #ff6819;
+        border: solid;
+        border-color: #ff6819;
     }
 
     .silkeborg_tekst p {
@@ -430,35 +443,92 @@ h2, {
         width: 45%;
     }
 
-      #landinglink {color: #0303d7;}
-
-    #landinglink1 {color: #ff6819;}
-
-     #landinglink2 {color: #ff6819;}
-    
-    
-    
-/*footer med nyhedsbrev*/
-    
-  .footerlanding {
-        margin-top: 20%;
-      margin-left: none; margin-right: none;
-      background-color: #f1f1f1;
+    #landinglink,
+    #landinglink1,
+    #landinglink2 {
+        color: #1f2022;
     }
 
-    
-    .nyhedsbrev {padding-top: 5%; text-align: center;}
-    
-    .tekstfelt {display: flex; flex-direction: column;}
-    
-    .navn {width: 50%; margin-left: 25%;}
-    
-    .mail {width: 50%; margin-left: 25%; margin-top: 5%;}
-    
-    .tilmeldknap {margin-top: 5%; padding: 3%; padding-left: 6%; padding-right: 6%; margin-left: 38%; color: white; background-color: #1f2022; border: none;}
 
-    .footercleansneaks { text-align: center; margin-top: 10%;}
-    
-    
-    .some {display: flex; width: 20%;}
-    
+
+
+
+    /*footer med nyhedsbrev*/
+
+    .footerlanding {
+        margin-top: 20%;
+        margin-left: none;
+        margin-right: none;
+        background-color: #f1f1f1;
+    }
+
+
+    .nyhedsbrev {
+        padding-top: 5%;
+        text-align: center;
+    }
+
+    .tekstfelt {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navn {
+        width: 50%;
+        margin-left: 25%;
+    }
+
+    .mail {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 5%;
+    }
+
+    .tilmeldknap {
+        margin-top: 5%;
+        padding: 3%;
+        padding-left: 6%;
+        padding-right: 6%;
+        margin-left: 39%;
+        color: white;
+        background-color: #1f2022;
+        border: none;
+    }
+
+    .footercleansneaks {
+        text-align: center;
+        margin-top: 10%;
+    }
+
+
+    .some {
+        display: flex;
+        width: 20%;
+        margin-left: 40%;
+    }
+}
+
+
+
+
+
+/*----------------DEKSTOP / STOR SKÆRM BEGYNDER HER -------------------*/
+
+@media all and (min-width: 601px) {
+
+    .mobilheader {
+        display: none;
+    }
+
+    .deskheader {
+        width: 100%;
+    }
+
+
+    #landingmenu {
+        display: flex;
+
+
+    }
+
+
