@@ -222,6 +222,7 @@ h2 {
         text-align: center;
         margin-top: 15%;
         font-size: 150%;
+        
     }
 
     body {
@@ -229,14 +230,16 @@ h2 {
     }
 
     .landingp p {
-        text-align: center;
+        text-align: ;
     }
 
 
     /*det første af landingpage/forsiden webshop, århus renseri og Silkeborg renseri */
 
     #landingmenu {
-        margin-top: 10%
+        margin-top: 10%;
+       
+            
     }
 
 
@@ -244,22 +247,26 @@ h2 {
     /* webshop knappen*/
     .webshop {
         width: 91%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-
-
-
+      
+    }
+    
+    
+    .webshop_container {
+        position: relative; text-align: center;
     }
 
     .tekst_webshop {
-        position: absolute;
-        bottom: 60%;
-        right: 30%;
+       position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         background-color: #1f2022;
         color: white;
-        padding-left: 8%;
-        padding-right: 8%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 2%; 
+        border: solid; 5px; border-color: #0303d7; 
+       
 
     }
 
@@ -272,25 +279,20 @@ h2 {
 
 
     #webshoppil {
-        color: #0000ff;
-        font-size;
+        color: #0303d7;
+        
     }
 
-    .webshop:hover {
-        opacity: 0.3;
-    }
-
-
-
+   
 
     /* renserierne knapper*/
 
     .renserier {
         display: flex;
         width: 96%;
-        flex-direction: row;
-        margin-left: 4.5%;
-        margin-top: 4.5%
+        margin-left: 1.5%;
+        margin-top: 5%;
+       
     }
 
 
@@ -303,25 +305,36 @@ h2 {
 
     }
 
-    .aarhusrenseri:hover {
-        opacity: 0.3;
+  
+
+    .aarhuscontainer {
+        position: relative; text-align: center;
     }
 
     .aarhus_tekst {
+
         position: absolute;
-        bottom: 25%;
-        right: 57%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         background-color: #1f2022;
         color: white;
-        padding-left: 6%;
-        padding-right: 6%;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 2%;
+         border: solid; border-color: #ff6819;
+        
+
 
     }
 
     .aarhus_tekst p {
-        font-size: 15px;
+        font-size: 100%;
         text-align: center;
         text-transform: uppercase;
+    
+
+        
     }
 
 
@@ -332,24 +345,27 @@ h2 {
         margin-left: 2.5%
     }
 
-    .silkeborgrenseri:hover {
-        opacity: 0.3;
+
+     .silkeborgcontainer {
+        position: relative; text-align: center;
     }
 
-
     .silkeborg_tekst {
+      
         position: absolute;
-        bottom: 25%;
-        right: 6%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         background-color: #1f2022;
         color: white;
-        padding-left: 3%;
-        padding-right: 3%;
-
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 2%;
+        border: solid; border-color: #ff6819;
     }
 
     .silkeborg_tekst p {
-        font-size: 15px;
+        font-size: 100%;
         text-align: center;
         text-transform: uppercase;
     }
@@ -401,3 +417,9 @@ h2 {
     .footerlanding {
         margin-top: 20%
     }
+    
+     #landinglink {color: #0303d7;}
+
+    #landinglink1 {color: #ff6819;}
+
+     #landinglink2 {color: #ff6819;}
