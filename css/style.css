@@ -31,7 +31,8 @@ p {
 }
 
 h1,
-h2, {
+h2,
+    {
     font-family: 'arboria-bold', sans-serif;
 }
 
@@ -145,6 +146,10 @@ h2, {
 
     /* Tilbud og prisberegner */
 
+    .tilbud-og-prisberegner {
+        display: grid;
+    }
+
     .tilbud-og-prisberegner h2 {
         text-decoration: underline;
         text-decoration-color: #ff6819;
@@ -158,14 +163,34 @@ h2, {
 
     }
 
+    input[type=image] {
+        width: 100%;
+    }
+
+    input[type=number] {
+        width: 30%;
+        margin-left: 35%
+    }
+
+    .antal-sko p {
+        float: right;
+        text-align: center;
+    }
+    
+    .antal-sko {
+        display: grid;
+    }
+
     .tilbud {
         display: grid;
         grid-row-gap: 30px;
         margin: 5%;
     }
 
-    .tilbud img {
-        width: 100%
+
+    .tilvalg ul {
+        font-family: 'Axiforma';
+        list-style: none;
     }
 
 
@@ -237,6 +262,22 @@ h2, {
         bottom: 0;
         width: 100%;
     }
+
+    /* Kontakt og åbningstider */
+
+    .kontakt-og-priser h2 {
+        padding-top: 5%;
+        margin: 5%;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+    }
+
+    .kontakt-og-priser p {
+        text-align: center;
+        font-size: 20px;
+    }
+
 
     /*--------------------------styles til clean sneaks forside------------------*/
 
@@ -458,24 +499,61 @@ h2, {
 
 /*footer med nyhedsbrev*/
 
-  .footerlanding {
+    .footerlanding {
         margin-top: 20%;
-      margin-left: none; margin-right: none;
-      background-color: #f1f1f1;
+        margin-left: none;
+        margin-right: none;
+        background-color: #f1f1f1;
     }
 
 
-    .nyhedsbrev {padding-top: 5%; text-align: center;}
+    .nyhedsbrev {
+        padding-top: 5%;
+        text-align: center;
+    }
 
-    .tekstfelt {display: flex; flex-direction: column;}
+    .tekstfelt {
+        display: flex;
+        flex-direction: column;
+    }
 
-    .navn {width: 50%; margin-left: 25%;}
+    .navn {
+        width: 50%;
+        margin-left: 25%;
+    }
 
-    .mail {width: 50%; margin-left: 25%; margin-top: 5%;}
+    .mail {
+        width: 50%;
+        margin-left: 25%;
+        margin-top: 5%;
+    }
 
-    .tilmeldknap {margin-top: 5%; padding: 3%; padding-left: 6%; padding-right: 6%; margin-left: 38%; color: white; background-color: #1f2022; border: none;}
+    .tilmeldknap {
+        margin-top: 5%;
+        padding: 3%;
+        padding-left: 6%;
+        padding-right: 6%;
+        margin-left: 38%;
+        color: white;
+        background-color: #1f2022;
+        border: none;
+    }
 
-    .footercleansneaks { text-align: center; margin-top: 10%;}
+    .footercleansneaks {
+        text-align: center;
+        margin-top: 10%;
+    }
 
 
-    .some {display: flex; width: 20%;}
+    .some {
+        display: flex;
+        width: 20%;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+        font-family: inherit;
+        font-size: 100%;
+    }

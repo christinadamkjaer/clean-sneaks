@@ -84,10 +84,44 @@
             <h2>Tilbud og Prisberegner</h2>
             <h3>Udregn prisen med vores prisberegner</h3>
         </section>
-        <section class="tilbud">
-            <img src="images/standard-rens.png" alt="standard rens">
-            <img src="images/god-rens.png" alt="god rens">
-            <img src="images/perfekt-rens.png" alt="perfekt rens">
+        <section class="beregner">
+
+            <!-- Tilbud -->
+            <section class="tilbud">
+
+                <input id="stanard-rens" type="image" value="59" src="images/standard-rens.png" alt="standard rens tilbud">
+
+                <input id="god-rens" type="image" value="89" src="images/god-rens.png" alt="god rens tilbud">
+
+                <input id="perfekt-rens" type="image" value="109" src="images/perfekt-rens.png" alt="perfekt rens tilbud">
+            </section>
+
+            <!-- Antal sko -->
+
+            <section class="antal-sko">
+                <p>Antal sko</p>
+                <input type="number" name="antal" min="1" max="10">
+            </section>
+
+            <!-- Tilvalg -->
+
+            <section class="tilvalg">
+                <ul>
+                    <li>
+                        <input id="tjek-damp" type="checkbox" name="vehicle" value="19"> Damp
+                    </li>
+                    <li>
+                        <input id="tjek-impregnering" type="checkbox" name="vehicle" value="19"> Impregnering
+                    </li>
+                    <li>
+                        <input id="tjek-lugtfjerner" type="checkbox" name="vehicle" value="19"> Lugtfjerner
+                    </li>
+                    <li>
+                        <input id="tjek-farve" type="checkbox" name="vehicle" value="19"> Farve
+                    </li>
+                </ul>
+            </section>
+            <button id="btn" value="Submit">Add values</button><br>
         </section>
     </article>
 
@@ -110,7 +144,7 @@
     </article>
 
     <!-- !!!Her er problemet!!! -->
-    
+
     <a id="hvorfor-cleansneaks"></a>
     <h2>Dirty Sneaks vs. Clean Sneaks</h2>
     <div class="twentytwenty-container" data-orientation="vertical">
@@ -128,16 +162,78 @@
         </section>
     </article>
 
+    <a id="kontakt-og-priser"></a>
+    <article class="kontakt-og-priser">
+        <section>
+            <h2>Kontakt</h2>
+            <p>Klosterport 4 v. Galleri Grisk <br>
+                <br>
+                +45 60816011
+                <br>
+                <br>
+                aarhus@cleansneaks.dk</p>
+        </section>
+        <section>
+            <h2>Åbningstider:</h2>
+            <p><b>Mandag - Fredag:</b><br>13-17</p>
+            <p><b>Lørdag - Søndag:</b><br>Lukket</p>
+        </section>
+    </article>
 
-    <footer>
-        <img src="images/prototype-footer.jpg" alt="prototype footer">
+
+    <footer class="footerlanding">
+        <!--  <img src="images/prototype-footer-landing.jpg" alt="prototype footer">
+    </footer>-->
+
+
+
+        <form action="/action_page.php">
+            <div class="nyhedsbrev">
+                <h2 class="nyhedoverskrift">Nyhedsbrev</h2>
+                <p>Tilmeld dig vores nyhedsbrev, for de seneste nyheder og tilbud</p>
+            </div>
+
+            <div class="tekstfelt">
+                <input class="navn" type="text" placeholder="Name" name="name" required>
+                <input class="mail" type="text" placeholder="Email address" name="mail" required>
+
+            </div>
+
+            <div class="tilmeld">
+                <input class="tilmeldknap" type="submit" value="Tilmeld">
+            </div>
+        </form>
+
+        <p class="footercleansneaks"> ©2013 Clean Sneaks <br> Privatlivspolitik & handelsbetingelser </p>
+
+        <div class="some">
+
+            <a href=""><img class="facebook" src="images/facebook_icon.png"> </a>
+            <a href=""></a>
+
+            <a href=""> <img class="instagram" src="images/instagram_icon.png"> </a>
+        </div>
+
+
+
     </footer>
 
 
 
-    <script src="js/jquery.event.move.js" type="text/javascript"></script>
-    <script src="js/jquery.twentytwenty.js" type="text/javascript"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script>
+        $(function() {
+            $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({
+                default_offset_pct: 0.7
+            });
+            $(".twentytwenty-container[data-orientation='vertical']").twentytwenty({
+                default_offset_pct: 0.3,
+                orientation: 'vertical'
+            });
+        });
+    </script>
     <script src="js/javascript.js"></script>
 
 
