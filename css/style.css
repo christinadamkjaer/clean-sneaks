@@ -27,7 +27,6 @@ body {
 
 p {
     font-family: 'Cabin', sans-serif;
-    margin: 5%;
 }
 
 h1,
@@ -43,6 +42,10 @@ h2,
 /* Mobil */
 
 @media (max-width: 768px) {
+
+    p {
+        margin: 5%;
+    }
 
 
     .mobilheader {
@@ -83,11 +86,16 @@ h2,
         margin-left: 5%
     }
 
-    .landing-page img {
+    .hero-image-mobil {
         width: 100%;
         position: relative;
         z-index: -1;
     }
+
+    .hero-image-computer {
+        display: none;
+    }
+
 
     .landing-page ul {
         font-family: 'Axiforma';
@@ -200,27 +208,34 @@ h2,
 
     /* Anbefalinger */
 
-    .anbefalinger {
-        width: 100%;
-        position: relative;
-        padding-top: 100%;
+    .anbefaliner-og-hvorfor-cleansneaks {
+        background-color: #1f2022;
+        padding-top: 10%;
+        padding-bottom: 10%;
     }
 
     .overskrift-anbefalinger {
+        color: white;
         text-decoration: underline;
         text-decoration-color: #ff6819;
         text-align: center;
-        margin-top: 20%;
+    }
+
+
+    .anbefalinger {
+        width: 80%;
+        position: relative;
+        padding-top: 100%;
+        transform: translate(12.2%, 0%);
     }
 
     .anbefaling {
         position: absolute;
         top: 0;
         left: 0;
-        width: 80%;
+        width: 100%;
         height: 100%;
         border: 0;
-        transform: translate(12.5%, 0%);
     }
 
     .knap-hoejre {
@@ -230,10 +245,9 @@ h2,
         position: absolute;
         padding: 10px;
         top: 50%;
-        left: 92%;
+        left: 101%;
         transform: translate(0%, -50%);
         -ms-transform: translate(-0%, -50%);
-
     }
 
     .knap-venstre {
@@ -243,14 +257,20 @@ h2,
         position: absolute;
         padding: 10px;
         top: 50%;
-        left: ;
+        left: -11%;
         transform: translate(0%, -50%);
         -ms-transform: translate(-0%, -50%);
     }
 
     /* Twenty-twenty slider */
 
+    .twentytwenty-container {}
 
+    .hvorfor-clean-sneaks h2 {
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+        margin: 5%;
+    }
 
     /* Hvor er drop-off boksen? */
 
@@ -282,6 +302,10 @@ h2,
         font-size: 20px;
     }
 
+    .galleri-grisk {
+        display: none;
+    }
+
 
     /*--------------------------styles til clean sneaks forside------------------*/
 
@@ -297,7 +321,7 @@ h2,
         margin: 1%
     }
 
-   
+
 
 
 
@@ -561,7 +585,8 @@ h2,
 
 @media all and (min-width: 769px) {
 
-        body {background-color: red;}
+    /* ------ Generelt ----- */
+
     .mobilheader {
         display: none;
     }
@@ -570,17 +595,323 @@ h2,
         width: 100%;
     }
 
+    /* ------- Clean Sneaks Århus ----- */
 
-   
-    
-    
-    
-    footer {background-color: #f1f1f1;}
-    
-   
-    .facebook {width: 5%;}
-    .instagram {width: 5%;}
-    .nyheddesk {display: flex; justify-content: center;} }
-    
-    
- 
+    /* ------- landingpage ---- */
+
+    .landing-page {
+        position: relative;
+    }
+
+    .landing-page h1 {
+        position: absolute;
+        font-size: 60px;
+        margin-top: 3%;
+        color: #ff6819;
+    }
+
+    .landing-page h2 {
+        font-family: 'axiforma-light-italic';
+        color: white;
+        opacity: 0.6;
+        position: absolute;
+        font-size: 18px;
+        margin-top: 16%;
+
+    }
+
+    .landing-page section {
+        margin-left: 7%
+    }
+
+    .hero-image-mobil {
+        display: none;
+    }
+
+    .hero-image-computer {
+        width: 100%;
+
+    }
+
+    .landing-page ul {
+        font-family: 'Axiforma';
+        font-size: 13px;
+        line-height: 28px;
+        position: absolute;
+        text-align: left;
+        list-style: none;
+        bottom: 15%;
+        left: 4%;
+    }
+
+    .landing-page li {
+        border-style: solid;
+        border-color: transparent;
+        border-left-width: 3px;
+        border-left-color: #d1641d;
+        padding-left: 7px;
+    }
+
+    .landing-page a:link,
+    a:visited {
+        color: white;
+        opacity: 0.6;
+        text-decoration: none;
+    }
+
+    .landing-page a:hover {
+        color: #d1641d;
+        opacity: 1;
+    }
+
+
+    /* ----- Hvem er vi? ---- */
+
+    .hvem-er-vi {
+        margin: 8%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hvem-er-vi h2 {
+        font-size: 35px;
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+    }
+
+    .tekst-hvem-er-vi {
+        width: 45%;
+        align-self: center;
+    }
+
+    .hvem-er-vi img {
+        width: 45%;
+        height: auto;
+        align-self: center;
+    }
+
+    /* ------ Så nemt er det ----- */
+
+
+    .saa-nemt-er-det {
+        margin: 8%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
+    .saa-nemt-er-det h2 {
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+        font-size: 35px;
+    }
+
+    .tekst-saa-nemt-er-det {
+        width: 45%;
+        align-self: center;
+    }
+
+    .saa-nemt-er-det img {
+        width: 45%;
+        height: auto;
+        align-self: center;
+    }
+
+
+    /* ------ Prisberegner ------ */
+
+
+    .tilbud-og-prisberegner {
+        margin: 8%;
+    }
+
+    .tilbud-og-prisberegner h2 {
+        font-size: 35px;
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+
+    }
+
+    .tilbud-og-prisberegner h3 {
+        font-family: 'axiforma-light-italic';
+        font-size: 20px;
+    }
+
+    .tilbud {
+        display: flex;
+        flex-direction: row;
+    }
+
+    input[type=image] {
+        width: 95%;
+    }
+
+    .antal-sko-og-tilvalg {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+    }
+
+    .tilvalg ul {
+        font-family: 'Axiforma';
+        list-style: none;
+    }
+
+    .tilvalg {}
+
+    input[type=number] {
+        width: 30%;
+        margin-left: 35%
+    }
+
+    .antal-sko p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .antal-sko {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-top: 8%;
+        margin-right: 8%;
+    }
+
+    /* Anbefalinger */
+
+    .anbefalinger {
+        width: 100%;
+        position: relative;
+        padding-top: 100%;
+    }
+
+    .overskrift-anbefalinger {
+        font-size: 30px;
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+        text-align: center;
+    }
+
+    .anbefaling {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        transform: translate(28.5%, 0%);
+    }
+
+    .knap-hoejre {
+        color: #fff;
+        background-color: #1f2022;
+        border: none;
+        position: absolute;
+        padding: 10px;
+        top: 15%;
+        left: 80%
+    }
+
+    .knap-venstre {
+        color: #fff;
+        background-color: #1f2022;
+        border: none;
+        position: absolute;
+        padding: 10px;
+        top: 15%;
+        left: 20%;
+    }
+
+    /* Twenty-twenty slider */
+
+
+
+    /* Hvor er drop-off boksen? */
+
+    .hvor-er-boksen h2 {
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+        margin: 5%;
+    }
+
+    #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /* Kontakt og åbningstider */
+
+    .kontakt-og-priser {
+        display: flex;
+        margin-left: 8%;
+        margin-right: 8%;
+        justify-content: space-between;
+    }
+
+    .kontakt-og-priser h2 {
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+        padding-top: 8%;
+    }
+
+    .kontakt-og-priser p {
+        font-size: 20px;
+    }
+
+    .galleri-grisk {
+        width: 45%;
+        padding-top: 3%;
+        align-self: center;
+    }
+
+
+
+    /* ----- Footer ----- */
+
+    footer {
+        position: relative;
+        background-color: #f1f1f1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .top-footer {
+        margin-left: 10%;
+        margin-bottom: 3%;
+    }
+
+    .bottom-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .some img {
+        width: 5%;
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .facebook {
+        margin-left: 5%;
+    }
+
+
+    .tilmeldknap {
+        margin-top: 2%;
+        padding: 2%;
+        padding-left: 9.2%;
+        padding-right: 9.2%;
+        color: white;
+        background-color: #1f2022;
+        border: none;
+    }
+}
