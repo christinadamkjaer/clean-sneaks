@@ -204,22 +204,21 @@ a {
 
 /* Mobil */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
     p {
         margin: 5%;
     }
 
 
-  /*  .mobilheader {
+    .mobilheader {
         width: 100%;
-        display: none;
     }
 
     .deskheader {
         display: none;
     }
-*/
+
 
     /*--------------------------styles til clean sneaks århus underside------------------*/
     /* Landing Page på Århus siden*/
@@ -280,7 +279,8 @@ a {
         padding-right: 7px;
     }
 
-    .landing-page a:link {
+    .landing-page a:link,
+    a:visited {
         color: white;
         opacity: 0.6;
         text-decoration: none;
@@ -437,20 +437,92 @@ a {
 
     /* Hvor er drop-off boksen? */
 
-    .hvor-er-boksen h2 {
+
+    .map-container {
+        position: relative;
+        width: 90%;
+        height: 50vh;
+        margin: 5%;
+    }
+        #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 5px;
+        width: 100%;
+        z-index:
+    }
+
+    /* Snippet https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp  */
+
+    /* The grid: Four equal columns that floats next to each other */
+    .column {
+        position: relative;
+        width: 20%;
+        height: auto;
+        padding-left: 10px;
+    }
+
+    .row {
+        margin: 5%;
+        display: flex;
+        align-content: center;
+    }
+
+    /* Style the images inside the grid */
+    .column img {
+        width: 100%;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .column img:hover {
+        opacity: 1;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+    }
+
+    /* The expanding image container (positioning is needed to position the close button and the text) */
+    .container {
+        position: relative;
+        margin-left: 17%;
+        width: 100%;
+        display: none;
+    }
+
+    /* Expanding image text */
+    #imgtext {
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        color: white;
+        font-size: 20px;
+    }
+
+    /* Closable button inside the image */
+    .closebtn {
+        position: absolute;
+        right: 5px;
+        color: white;
+        font-size: 35px;
+        cursor: pointer;
+    }
+
+    * .hvor-er-boksen h2 {
         text-decoration: underline;
         text-decoration-color: #ff6819;
         margin: 5%;
     }
 
-    #map {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-    }
-
     /* Kontakt og åbningstider */
+
+    .kontakt-og-priser {
+        margin-top: 20%;
+    }
 
     .kontakt-og-priser h2 {
         padding-top: 5%;
@@ -472,7 +544,7 @@ a {
 
     /*--------------------------styles til clean sneaks forside------------------*/
 
-    /*generelt til forsiden*/
+  /*generelt til forsiden*/
     .landingoverskrift {
         text-align: center;
         margin-top: 15%;
@@ -487,6 +559,8 @@ a {
     .desktopimg {
         display: none;
     }
+
+    .storypige {display: none;}
 
 
 
@@ -595,6 +669,8 @@ a {
         text-align: center;
         text-transform: uppercase;
 
+
+
     }
 
 
@@ -676,6 +752,10 @@ a {
         width: 45%;
     }
 
+    .storypige1 {
+        width: 45%;
+    }
+
     #landinglink,
     #landinglink1,
     #landinglink2 {
@@ -745,13 +825,18 @@ a {
 
 
 
+
+
 /*----------------STØRRE SKÆRME-------------------*/
 
-@media all and (min-width: 601px) {
+@media all and (min-width: 769px) {
 
 
 
-    .webshop {
+/*Clean Sneaks Forside / Landingpaoge*/
+
+/*Generelt på forsiden*/
+.webshop {
         display: none;
     }
 
@@ -761,7 +846,346 @@ a {
 
     .deskheader {
         width: 100%;
+        opacity: 0.7;
     }
+
+    .storypige1 {display: none;}
+
+       #landingmenu {
+        margin-top: 4%;
+        margin-left: %
+    }
+
+
+    /*para*/
+    #test {background-image: url(../images/shoot-n-design-70930-unsplash.jpg);
+
+  height: 100%;
+
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    }
+
+
+    #landingmenu {background-image: url(../images/test.jpg;);}
+
+
+/*desktop menu knapper landing*/
+
+
+
+   .desktopimg {
+        width: 103%;
+    }
+
+    .aarhusrenseri {
+        width: 70%;
+    }
+
+    .silkeborgrenseri {
+        width: 70%;
+    }
+
+
+/*desktop menu knapper landing GRID*/
+
+    .desktopwebshop {
+        grid-area: webshop;
+    }
+
+    .desktopaarhus {
+        grid-area: aarhus;
+    }
+
+    .desktopsilke {
+        grid-area: silke;
+    }
+
+
+
+
+
+
+    .landingdeskmenu {
+
+
+        display: grid;
+        grid-gap: 2%;
+     margin-left: 28%;
+
+        grid-template-columns: 35% 27.5%;
+        grid-template-areas: "webshop  aarhus"
+            "webshop aarhus"
+            "webshop  silke"
+            "webshop silke"
+    }
+
+
+
+
+
+
+
+    /* webshop-menu-knap tekst på billeder*/
+
+
+
+    .webshop_container {
+        position: relative;
+        text-align: center;
+    }
+
+    .tekst_webshop {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #1f2022;
+        color: white;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 2%;
+        border: solid;
+        5px;
+        border-color: #f1f1f1;
+
+
+    }
+
+    .tekst_webshop p {
+        font-size: 25px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+
+
+    #webshoppil {
+        color: #f1f1f1;
+
+    }
+
+
+    .desktopwebshop { transition: transform .2s}
+
+    .desktopwebshop:hover { transform: scale(1.1)}
+
+
+
+    /* renserierne knapper tekst på billederne*/
+
+
+
+
+    /* Århus renseri knap*/
+
+    .aarhusrenseri {
+
+        width: 90%;
+        margin-left: 2%;
+        margin-bottom: 5%;
+    }
+
+
+
+    .aarhuscontainer {
+        position: relative;
+        text-align: center;
+    }
+
+    .aarhus_tekst {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #1f2022;
+        color: white;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 2%;
+        border: solid;
+        border-color: #ff6819;
+
+
+
+    }
+
+    .aarhus_tekst p {
+        font-size: 100%;
+        text-align: center;
+        text-transform: uppercase;
+
+
+
+    }
+
+
+      .desktopaarhus { transition: transform .2s}
+
+    .desktopaarhus:hover { transform: scale(1.1)}
+    /*Silkeborg renseri knap*/
+
+    .silkeborgrenseri {
+        width: 90%;
+        margin-left: 2.5%
+    }
+
+
+    .silkeborgcontainer {
+        position: relative;
+        text-align: center;
+    }
+
+    .silkeborg_tekst {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #1f2022;
+        color: white;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 2%;
+        border: solid;
+        border-color: #ff6819;
+    }
+
+    .silkeborg_tekst p {
+        font-size: 100%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .renseripil {
+        color: #ff6819;
+    }
+
+    .desktopsilke { transition: transform .2s}
+
+    .desktopsilke:hover { transform: scale(1.1)}
+
+
+
+    /*Storytelling desktop*/
+
+
+
+    .storytelling1 {
+        margin-top: 15%;
+        margin-left: 8%;
+        margin-right: 8%;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+
+    .fyr1 {
+        width: 40%;
+        margin-left: 5%;
+        margin-top: 5%
+    }
+
+    #streetfyr {
+        width: 100%;
+    }
+
+    .story1 {
+        width: 55%;
+        padding-top: 7%;
+
+    }
+
+
+    .storytelling2 {
+        margin-top: 15%;
+        margin-right: 8%;
+
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .sko1 {
+        width: 35%;
+    }
+
+    .storysneaks {
+        width: 100%;
+    }
+
+    .story2 {
+        width: 55%;
+        padding-top: 6%
+    }
+
+
+
+     .citat {
+        margin-top: 16%;
+        margin-left: 10%;
+        font-style: italic;
+
+    }
+
+    .citatdennis {
+        font-weight: bold;
+        text-align: center;
+    }
+
+
+
+      .storytelling3 {
+        margin-top: 15%;
+        margin-left: 8%;
+        margin-right: 8%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-content: center;
+        margin-bottom: 15%;
+    }
+
+    .pige {
+        width: 40%;
+
+    }
+
+    .storypige {
+        width: 100%;
+    }
+
+    .storypige1 {
+        width: 100%;
+    }
+
+    .story3 {
+        width: 55%;
+        padding-top: 7%;
+        margin-right: 4%;
+    }
+
+    .landingoverskrift {
+        text-align: center;
+        font-size: 150%
+    }
+
+     #landinglink,
+    #landinglink1,
+    #landinglink2 {
+        color: #1f2022;
+    }
+
+
+
+
+
+
+
+
+
 
     /* ------- Clean Sneaks Århus ----- */
 
@@ -890,25 +1314,192 @@ a {
     /* ------ Prisberegner ------ */
 
 
+    .tilbud-og-prisberegner {
+        margin: 8%;
+    }
+
+    .tilbud-og-prisberegner h2 {
+        font-size: 35px;
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+
+    }
+
+    .tilbud-og-prisberegner h3 {
+        font-family: 'axiforma-light-italic';
+        font-size: 20px;
+    }
+
+    .tilbud {
+        display: flex;
+        flex-direction: row;
+    }
+
+    input[type=image] {
+        width: 95%;
+    }
+
+    .antal-sko-og-tilvalg {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+    }
+
+    .tilvalg ul {
+        font-family: 'Axiforma';
+        list-style: none;
+    }
+
+    .tilvalg {}
+
+    input[type=number] {
+        width: 30%;
+        margin-left: 35%
+    }
+
+    .antal-sko p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .antal-sko {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-top: 8%;
+        margin-right: 8%;
+    }
+
+    /* Anbefalinger */
+
+    .anbefalinger {
+        width: 100%;
+        position: relative;
+        padding-top: 100%;
+    }
+
+    .overskrift-anbefalinger {
+        font-size: 30px;
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+        text-align: center;
+    }
+
+    .anbefaling {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        transform: translate(28.5%, 0%);
+    }
+
+    .knap-hoejre {
+        color: #fff;
+        background-color: #1f2022;
+        border: none;
+        position: absolute;
+        padding: 10px;
+        top: 15%;
+        left: 80%
+    }
+
+    .knap-venstre {
+        color: #fff;
+        background-color: #1f2022;
+        border: none;
+        position: absolute;
+        padding: 10px;
+        top: 15%;
+        left: 20%;
+    }
+
+    /* Twenty-twenty slider */
 
 
 
+    /* Hvor er drop-off boksen? */
 
-    footer {background-color: #f1f1f1;}
+    .hvor-er-boksen {
+        position: relative;
+        height: 50vh;
+        margin: 8%;
+    }
+
+    .hvor-er-boksen h2 {
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+        margin: 5%;
+    }
+
+    #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /* Kontakt og pris */
+
+    .kontakt-og-priser {
+        display: flex;
+        margin-left: 8%;
+        margin-right: 8%;
+        justify-content: space-between;
+    }
+
+    .kontakt-og-priser h2 {
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+        padding-top: 8%;
+    }
+
+    .kontakt-og-priser p {
+        font-size: 20px;
+    }
+
+    .galleri-grisk {
+        width: 45%;
+        padding-top: 3%;
+        align-self: center;
+    }
 
 
-    .facebook {width: 5%;}
-    .instagram {width: 5%;}
-    .nyheddesk {display: flex; justify-content: center;} }
 
+    /* ----- Footer ----- */
 
-   /*----------------HELT STORE SKÆRME-------------------*/
+    footer {
+        position: relative;
+        background-color: #f1f1f1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
+    .top-footer {
+        margin-left: 10%;
+        margin-bottom: 3%;
+    }
 
-    @media all and (min-width: 1010px) {
+    .bottom-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
-        body {background-color: red;}
+    }
 
+    .some img {
+        width: 5%;
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .facebook {
+        margin-left: 5%;
     }
 
 
@@ -921,3 +1512,22 @@ a {
         background-color: #1f2022;
         border: none;
     }
+
+}
+
+@media all and (min-width: 1100px) {
+
+
+    #test p {line-height: 200%}
+
+    .story1, .citat, .story3 { padding-left: 5% ; padding-right: 5%;}
+
+
+    .story1 {padding-top: 16%;}
+
+    .citat {padding-top: 5%;}
+
+    .story3 {padding-top: 9%;}
+
+    .landingoverskrift {font-size: 250%;}
+}

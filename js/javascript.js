@@ -1,4 +1,8 @@
-/* Source: https://www.w3schools.com/w3css/w3css_slideshow.asp */
+/* Source: https://www.w3schools.com/w3css/w3css_slideshow.asp 
+
+Anbefalingsslider
+
+*/
 
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -22,64 +26,17 @@ function showDivs(n) {
     x[slideIndex - 1].style.display = "block";
 }
 
-/* ---- Start function twentytwenty */
+/* billedeboks */
 
-
-/*
-$(function () {
-    $(".twentytwenty-container[data-orientation!='vertical']").twentytwenty({
-        default_offset_pct: 0.7
-    });
-});
-*/
-/* -------- plus/minus sko ---- */
-
-
-
-/* --------- Beregner ----- */
-
-/*
-// eventlistener: wait for a clik
-btn.addEventListener('click', beregner);
-
-*/
-// perform calculations
-function beregner() {
-
-    pris = parseFloat(standard - rens.value) + // parsefloat: convert form-string to number
-        parseFloat(god - rens.value) +
-        parseFloat(perfekt - rens.value);
-
-    // hvis der er x i checkboxe
-    if (tjek - damp.checked == true) {
-        pris += parseFloat(tjek - damp.value);
-    }
-
-    if (tjek - impregnering.checked == true) {
-        pris += parseFloat(tjek - impregnering.value);
-    }
-
-    // viser resultatet i en alertbox 
-    document.write(pris());
-}
-
-btn_a.addEventListener('click', btn_a_func);
-
-var pris = 0
-
-function btn_a_func() {
-    
-
-
-
-    
-    if (tjek-damp.checked == true) {
-        //pris = 27;
-        document.getElementById("demo").innerHTML = 7;
-    }
-//document.getElementById("demo").innerHTML = pris;
-    //(pris);
-
-
-
+function myFunction(imgs) {
+    // Get the expanded image
+    var expandImg = document.getElementById("expandedImg");
+    // Get the image text
+    var imgText = document.getElementById("imgtext");
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    expandImg.src = imgs.src;
+    // Use the value of the alt attribute of the clickable image as text inside the expanded image
+    imgText.innerHTML = imgs.alt;
+    // Show the container element (hidden with CSS)
+    expandImg.parentElement.style.display = "block";
 }
