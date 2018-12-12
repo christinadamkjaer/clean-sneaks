@@ -15,7 +15,7 @@ function showDivs(n) {
     }
     if (n < 1) {
         slideIndex = x.length
-    };
+    }
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
@@ -38,25 +38,48 @@ $(function () {
 
 /* --------- Beregner ----- */
 
+/*
 // eventlistener: wait for a clik
 btn.addEventListener('click', beregner);
 
+*/
 // perform calculations
 function beregner() {
 
-  pris = parseFloat(standard-rens.value) + // parsefloat: convert form-string to number
-    parseFloat(god-rens.value) +
-    parseFloat(perfekt-rens.value);
+    pris = parseFloat(standard - rens.value) + // parsefloat: convert form-string to number
+        parseFloat(god - rens.value) +
+        parseFloat(perfekt - rens.value);
 
-  // hvis der er x i checkboxe
-  if (tjek-damp.checked == true) {
-  	pris += parseFloat( tjek-damp.value );
-  }
-  
-  if (tjek-impregnering.checked == true) {
-  	pris += parseFloat( tjek-impregnering.value );
-  }
- 
-	// viser resultatet i en alertbox 
-  document.write(pris());
+    // hvis der er x i checkboxe
+    if (tjek - damp.checked == true) {
+        pris += parseFloat(tjek - damp.value);
+    }
+
+    if (tjek - impregnering.checked == true) {
+        pris += parseFloat(tjek - impregnering.value);
+    }
+
+    // viser resultatet i en alertbox 
+    document.write(pris());
+}
+
+btn_a.addEventListener('click', btn_a_func);
+
+var pris = 0
+
+function btn_a_func() {
+    
+
+
+
+    
+    if (tjek-damp.checked == true) {
+        //pris = 27;
+        document.getElementById("demo").innerHTML = 7;
+    }
+//document.getElementById("demo").innerHTML = pris;
+    //(pris);
+
+
+
 }
