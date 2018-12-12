@@ -381,7 +381,7 @@ h2,
 
     /*--------------------------styles til clean sneaks forside------------------*/
 
-    /*generelt til forsiden*/
+  /*generelt til forsiden*/
     .landingoverskrift {
         text-align: center;
         margin-top: 15%;
@@ -656,12 +656,15 @@ h2,
 
 
 
+
+
 /*----------------STØRRE SKÆRME-------------------*/
 
 @media all and (min-width: 769px) {
 
 
-    .webshop {
+
+.webshop {
         display: none;
     }
 
@@ -673,11 +676,11 @@ h2,
         width: 100%;
     }
 
-
-
-
-
-    .desktopimg {
+    
+    
+    
+    
+   .desktopimg {
         width: 100%;
     }
 
@@ -912,9 +915,9 @@ h2,
         padding-top: 6%
     }
 
-
-
-    .citat {
+    
+    
+     .citat {
         margin-top: 16%;
         font-style: italic;
 
@@ -924,10 +927,10 @@ h2,
         font-weight: bold;
         text-align: center;
     }
-
-
-
-    .storytelling3 {
+    
+    
+    
+      .storytelling3 {
         margin-top: 15%;
         margin-left: 8%;
         margin-right: 8%;
@@ -950,15 +953,11 @@ h2,
         padding-top: 7%;
         margin-right: 1%;
     }
-
+    
     .landingoverskrift {
         text-align: center;
         font-size: 150%
     }
-
-
-
-
 
 
 
