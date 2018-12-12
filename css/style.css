@@ -39,14 +39,12 @@ h2,
 /* -------- CleanSneaks Århus ------ */
 
 /*---------Styling burgermenu-------*/
-.hjem {
+.hjem{
   width: 10%;
-  position: absolute;
-  z-index: 1;
+  text-align: left;
 }
 
-
-.burgermenu {
+.wrapper {
   display:fixed;
   width:100%;
   height:150px;
@@ -57,15 +55,14 @@ h2,
   margin: 0 auto;
   }
 
-/*Gør toogle usynlig*/
 #menu {
   display:none;
   }
 
-#Navigationsbar {
+#navdestop {
 	overflow: hidden;
 	transition: top 1s ease-in-out;
-	background: #f12220;
+	background: #fcfcfc;
 	margin-top: 0;
 	position: fixed;
   width:100%;
@@ -73,16 +70,13 @@ h2,
   right:0;
   height:100%;
   top:-100%;
-
   }
 
-
-
-#menu:checked ~ #Navigationsbar {
+#menu:checked ~ #navdestop {
 	top:0;
   }
 
-#Navigationsbar ul {
+#navdestop ul {
 	height: 100%;
 	width: 90%;
 	padding-top: 0;
@@ -92,7 +86,7 @@ h2,
   top:0;
 	}
 
-#Navigationsbar ul li {
+#navdestop ul li {
 	display:block;
 	text-align: left;
 	position: relative;
@@ -101,9 +95,9 @@ h2,
 	margin: 0;
 	}
 
-#Navigationsbar a {
+#navdestop a {
 	display: inline-block;
-	font: 3rem 'worksans_bold';
+	font: 5px 'worksans_bold';
 	text-decoration: none;
 	position: relative;
 	color:#f0f0f0;
@@ -113,7 +107,7 @@ h2,
 	height: 100%;
 	}
 
-/* ----------------- Burgermenu -----------------*/
+/* #################### Burgermenu ######################## */
 
 .burger_menu {
 	position: fixed;
@@ -144,8 +138,7 @@ h2,
 
 .burger_menu span::after, .burger_menu span::before {
 	display: block;
-	content: '';
-	position: absolute;
+  position: absolute;
 	width: 25px;
 	height: 3px;
 	background: #1d1d1d;
@@ -200,6 +193,7 @@ h2,
 #menu:checked ~ .burger_menu span{
 	width:0;
 	}
+
 
 /* styling burger slut*/
 
@@ -275,8 +269,7 @@ h2,
         padding-right: 7px;
     }
 
-    .landing-page a:link,
-    a:visited {
+    .landing-page a:link {
         color: white;
         opacity: 0.6;
         text-decoration: none;
