@@ -481,6 +481,9 @@ h2,
         margin: 1%
     }
 
+    .desktopimg {
+        display: none;
+    }
 
 
 
@@ -519,7 +522,7 @@ h2,
         padding-top: 2%;
         border: solid;
         5px;
-        border-color: #0303d7;
+        border-color: #f1f1f1;
 
 
     }
@@ -533,7 +536,7 @@ h2,
 
 
     #webshoppil {
-        color: #0303d7;
+        color: #f1f1f1;
 
     }
 
@@ -744,7 +747,10 @@ h2,
 @media all and (min-width: 601px) {
 
 
-    /* ------ Generelt ----- */
+
+    .webshop {
+        display: none;
+    }
 
     .mobilheader {
         display: none;
@@ -900,4 +906,15 @@ h2,
 
         body {background-color: red;}
 
+    }
+
+
+    .tilmeldknap {
+        margin-top: 2%;
+        padding: 2%;
+        padding-left: 9.2%;
+        padding-right: 9.2%;
+        color: white;
+        background-color: #1f2022;
+        border: none;
     }
