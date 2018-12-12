@@ -42,7 +42,7 @@ h2,
 
 /* Mobil */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
 
     .mobilheader {
@@ -559,9 +559,9 @@ h2,
 
 /*----------------STØRRE SKÆRME-------------------*/
 
-@media all and (min-width: 601px) {
+@media all and (min-width: 769px) {
 
-    
+        body {background-color: red;}
     .mobilheader {
         display: none;
     }
@@ -583,12 +583,4 @@ h2,
     .nyheddesk {display: flex; justify-content: center;} }
     
     
-   /*----------------HELT STORE SKÆRME-------------------*/ 
-    
-    
-    @media all and (min-width: 1010px) {
-        
-        body {background-color: red;}
-        
-    }
-    
+ 
