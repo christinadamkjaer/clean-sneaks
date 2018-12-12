@@ -45,8 +45,12 @@ h2,
 @media (max-width: 600px) {
 
 
-    header img {
+    .mobilheader {
         width: 100%;
+    }
+
+    .deskheader {
+        display: none;
     }
 
 
@@ -176,7 +180,7 @@ h2,
         float: right;
         text-align: center;
     }
-    
+
     .antal-sko {
         display: grid;
     }
@@ -293,9 +297,9 @@ h2,
         margin: 1%
     }
 
-    .landingp p {
-        text-align: ;
-    }
+   
+
+
 
 
     /*det første af landingpage/forsiden webshop, århus renseri og Silkeborg renseri */
@@ -313,7 +317,6 @@ h2,
         width: 91%;
 
     }
-
 
     .webshop_container {
         position: relative;
@@ -485,19 +488,17 @@ h2,
         width: 45%;
     }
 
-    /*  .footerlanding {
-        margin-top: 20%
+    #landinglink,
+    #landinglink1,
+    #landinglink2 {
+        color: #1f2022;
     }
 
-     #landinglink {color: #0303d7;}
-
-    #landinglink1 {color: #ff6819;}
-
-     #landinglink2 {color: #ff6819;}
 
 
 
-/*footer med nyhedsbrev*/
+
+    /*footer med nyhedsbrev*/
 
     .footerlanding {
         margin-top: 20%;
@@ -533,7 +534,7 @@ h2,
         padding: 3%;
         padding-left: 6%;
         padding-right: 6%;
-        margin-left: 38%;
+        margin-left: 39%;
         color: white;
         background-color: #1f2022;
         border: none;
@@ -548,12 +549,46 @@ h2,
     .some {
         display: flex;
         width: 20%;
+        margin-left: 40%;
+    }
+}
+
+
+
+
+
+/*----------------STØRRE SKÆRME-------------------*/
+
+@media all and (min-width: 601px) {
+
+    
+    .mobilheader {
+        display: none;
     }
 
-    button,
-    input,
-    select,
-    textarea {
-        font-family: inherit;
-        font-size: 100%;
+    .deskheader {
+        width: 100%;
     }
+
+
+   
+    
+    
+    
+    footer {background-color: #f1f1f1;}
+    
+   
+    .facebook {width: 5%;}
+    .instagram {width: 5%;}
+    .nyheddesk {display: flex; justify-content: center;} }
+    
+    
+   /*----------------HELT STORE SKÆRME-------------------*/ 
+    
+    
+    @media all and (min-width: 1010px) {
+        
+        body {background-color: red;}
+        
+    }
+    
