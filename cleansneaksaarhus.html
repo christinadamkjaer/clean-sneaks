@@ -27,6 +27,11 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- API'er -->
+
+   
+
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
 
 </head>
 
@@ -142,13 +147,13 @@
         <article class="anbefalinger">
 
             <!-- https://www.w3schools.com/w3css/w3css_slideshow.asp -->
-                <iframe class="anbefaling" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffrederik.nielsen%2Fposts%2F10211163416419705%3A0&width=500" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                <iframe class="anbefaling" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D10209781296634585%26id%3D1396690837%26substory_index%3D0&width=500" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-                <iframe class="anbefaling" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmarc.s.eggen%2Fposts%2F10212768499861742%3A0&width=500" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            <iframe class="anbefaling" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ffrederik.nielsen%2Fposts%2F10211163416419705%3A0&width=500" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            <iframe class="anbefaling" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3D10209781296634585%26id%3D1396690837%26substory_index%3D0&width=500" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            <iframe class="anbefaling" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmarc.s.eggen%2Fposts%2F10212768499861742%3A0&width=500" style="border:none;overflow:hidden" scrolling="yes" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
 
-                <button class="knap-venstre" onclick="plusDivs(-1)">&#10094;</button>
-            
-                <button class="knap-hoejre" onclick="plusDivs(+1)">&#10095;</button>
+            <button class="knap-venstre" onclick="plusDivs(-1)">&#10094;</button>
+
+            <button class="knap-hoejre" onclick="plusDivs(+1)">&#10095;</button>
         </article>
     </article>
     <a id="hvorfor-clean-sneaks"></a>
@@ -167,6 +172,8 @@
             <p>Vores drop-off boks ligger i <b>Galleri Grisk</b> ved <b>Klostertorvet</b>.<br>
                 Brug vores map til at finde Galleri Grisk, og brug billedguiden til at finde boksen inde i Galleri Grisk. Clean Sneaks drop-off boksen er venlig selvbetjening, så vores venner i Galleri Grisk hjælper dig gerne. </p>
         </section>
+        
+        <div id='map'></div>
     </article>
 
     <a id="kontakt-og-priser"></a>
@@ -228,10 +235,6 @@
 
     </footer>
 
-    <button id="btn_a" value="Submit">Add values</button><br>
-
-    <p id="demo"></p>
-
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="js/jquery.event.move.js"></script>
     <script src="js/jquery.twentytwenty.js"></script>
@@ -247,6 +250,17 @@
         });
     </script>
 
+    
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoibWJza29lZHQiLCJhIjoiY2psb3MzdWplMXI2ZDNxbDF0eXpkY3ZkaSJ9.OfNdsonVbs86aN4yaHpoeA';
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mbskoedt/cjp9olpm61abw2snlcgux6jd4',
+            center: [10.206422, 56.159576],
+            zoom: 16.0
+        });
+    </script>
 
     <script src="js/javascript.js"></script>
 </body>
