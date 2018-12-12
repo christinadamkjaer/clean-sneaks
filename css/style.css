@@ -37,186 +37,25 @@ h2,
 
 /* -------- CleanSneaks Århus ------ */
 
-/*---------Styling burgermenu-------*/
-.hjem{
-  width: 10%;
-  text-align: left;
-}
-
-.wrapper {
-  display:fixed;
-  width:100%;
-  height:150px;
-  }
-
-.nav-wrap {
-  width:50%;
-  margin: 0 auto;
-  }
-
-#menu {
-  display:none;
-  }
-
-#navdestop {
-	overflow: hidden;
-	transition: top 1s ease-in-out;
-	background: #fcfcfc;
-	margin-top: 0;
-	position: fixed;
-  width:100%;
-  left:0;
-  right:0;
-  height:100%;
-  top:-100%;
-  }
-
-#menu:checked ~ #navdestop {
-	top:0;
-  }
-
-#navdestop ul {
-	height: 100%;
-	width: 90%;
-	padding-top: 0;
-	left: 0;
-	margin-left: 5%;
-  position:absolute;
-  top:0;
-	}
-
-#navdestop ul li {
-	display:block;
-	text-align: left;
-	position: relative;
-	top: 0;
-	transition: top 1s ease-in-out;
-	margin: 0;
-	}
-
-#navdestop a {
-	display: inline-block;
-	font: 5px 'worksans_bold';
-	text-decoration: none;
-	position: relative;
-	color:#f0f0f0;
-	}
-
-#navigation-animation {
-	height: 100%;
-	}
-
-/* #################### Burgermenu ######################## */
-
-.burger_menu {
-	position: fixed;
-	top: 35px;
-	right: 5%;
-	display: block;
-	cursor: pointer;
-	height: 21px;
-	width: 25px;
-	z-index: 101;
-	}
-
-.burger_menu span {
-	display: block;
-	top: 8px;
-    height: 3px;
-    background: #1d1d1d;
-	position: relative;
-	-webkit-transition: width 0.2s ease-in-out;
-	-moz-transition: width 0.2s ease-in-out;
-	-o-transition: width 0.2s ease-in-out;
-	transition: width 0.2s ease-in-out;
-	}
-
-.burger_menu span {
-	width: 25px;
-	}
-
-.burger_menu span::after, .burger_menu span::before {
-	display: block;
-  position: absolute;
-	width: 25px;
-	height: 3px;
-	background: #1d1d1d;
-	transition-property: margin, -webkit-transform;
-	-webkit-transition-property: margin, -webkit-transform;
-	-webkit-transition-duration: 0.2s;
-	-moz-transition-duration: 0.2s;
-	-ms-transition-duration: 0.2s;
-	-o-transition-duration: 0.2s;
-	transition-duration: 0.2s;
-	-webkit-transition-delay: 0.2s, 0s;
-	-moz-transition-delay: 0.2s, 0s;
-	-ms-transition-delay: 0.2s, 0s;
-	-o-transition-delay: 0.2s, 0s;
-	transition-delay: 0.2s, 0s;
-	}
-
-.burger_menu span::before {
-	margin-top: -8px;
-  	}
-
-.burger_menu span::after {
-  margin-top: 8px;
-  }
-
-#menu:checked ~ .burger_menu span::before,
-#menu:checked ~ .burger_menu span::after {
-	margin-top: 0px;
-	-webkit-transition-delay: 0.1s, 0.5s;
-	-moz-transition-delay: 0.1s, 0.5s;
-	-ms-transition-delay: 0.1s, 0.5s;
-	-o-transition-delay: 0.1s, 0.5s;
-	transition-delay: 0.1s, 0.5s;
-	}
-
-#menu:checked ~ .burger_menu span::before {
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
-	}
-
-#menu:checked ~ .burger_menu span::after {
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	}
-
-#menu:checked ~ .burger_menu span{
-	width:0;
-	}
-
-
-/* styling burger slut*/
-
-
 
 
 /* Mobil */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
     p {
         margin: 5%;
     }
 
 
-  /*  .mobilheader {
+    .mobilheader {
         width: 100%;
-        display: none;
     }
 
     .deskheader {
         display: none;
     }
-*/
+
 
     /*--------------------------styles til clean sneaks århus underside------------------*/
     /* Landing Page på Århus siden*/
@@ -277,7 +116,8 @@ h2,
         padding-right: 7px;
     }
 
-    .landing-page a:link {
+    .landing-page a:link,
+    a:visited {
         color: white;
         opacity: 0.6;
         text-decoration: none;
@@ -592,6 +432,8 @@ h2,
         text-align: center;
         text-transform: uppercase;
 
+
+
     }
 
 
@@ -744,8 +586,7 @@ h2,
 
 /*----------------STØRRE SKÆRME-------------------*/
 
-@media all and (min-width: 601px) {
-
+@media all and (min-width: 769px) {
 
 
     .webshop {
@@ -1213,25 +1054,186 @@ h2,
     /* ------ Prisberegner ------ */
 
 
+    .tilbud-og-prisberegner {
+        margin: 8%;
+    }
+
+    .tilbud-og-prisberegner h2 {
+        font-size: 35px;
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+
+    }
+
+    .tilbud-og-prisberegner h3 {
+        font-family: 'axiforma-light-italic';
+        font-size: 20px;
+    }
+
+    .tilbud {
+        display: flex;
+        flex-direction: row;
+    }
+
+    input[type=image] {
+        width: 95%;
+    }
+
+    .antal-sko-og-tilvalg {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+    }
+
+    .tilvalg ul {
+        font-family: 'Axiforma';
+        list-style: none;
+    }
+
+    .tilvalg {}
+
+    input[type=number] {
+        width: 30%;
+        margin-left: 35%
+    }
+
+    .antal-sko p {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .antal-sko {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-top: 8%;
+        margin-right: 8%;
+    }
+
+    /* Anbefalinger */
+
+    .anbefalinger {
+        width: 100%;
+        position: relative;
+        padding-top: 100%;
+    }
+
+    .overskrift-anbefalinger {
+        font-size: 30px;
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+        text-align: center;
+    }
+
+    .anbefaling {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        transform: translate(28.5%, 0%);
+    }
+
+    .knap-hoejre {
+        color: #fff;
+        background-color: #1f2022;
+        border: none;
+        position: absolute;
+        padding: 10px;
+        top: 15%;
+        left: 80%
+    }
+
+    .knap-venstre {
+        color: #fff;
+        background-color: #1f2022;
+        border: none;
+        position: absolute;
+        padding: 10px;
+        top: 15%;
+        left: 20%;
+    }
+
+    /* Twenty-twenty slider */
 
 
 
+    /* Hvor er drop-off boksen? */
 
-    footer {background-color: #f1f1f1;}
+    .hvor-er-boksen h2 {
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+        margin: 5%;
+    }
+
+    #map {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    /* Kontakt og åbningstider */
+
+    .kontakt-og-priser {
+        display: flex;
+        margin-left: 8%;
+        margin-right: 8%;
+        justify-content: space-between;
+    }
+
+    .kontakt-og-priser h2 {
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+        padding-top: 8%;
+    }
+
+    .kontakt-og-priser p {
+        font-size: 20px;
+    }
+
+    .galleri-grisk {
+        width: 45%;
+        padding-top: 3%;
+        align-self: center;
+    }
 
 
-    .facebook {width: 5%;}
-    .instagram {width: 5%;}
-    .nyheddesk {display: flex; justify-content: center;} }
 
+    /* ----- Footer ----- */
 
-   /*----------------HELT STORE SKÆRME-------------------*/
+    footer {
+        position: relative;
+        background-color: #f1f1f1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
+    .top-footer {
+        margin-left: 10%;
+        margin-bottom: 3%;
+    }
 
-    @media all and (min-width: 1010px) {
+    .bottom-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
-        body {background-color: red;}
+    }
 
+    .some img {
+        width: 5%;
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+    }
+
+    .facebook {
+        margin-left: 5%;
     }
 
 
