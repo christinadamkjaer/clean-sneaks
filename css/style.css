@@ -297,7 +297,10 @@ h2,
         margin: 1%
     }
 
-   
+    .desktopimg {
+        display: none;
+    }
+
 
 
 
@@ -335,7 +338,7 @@ h2,
         padding-top: 2%;
         border: solid;
         5px;
-        border-color: #0303d7;
+        border-color: #f1f1f1;
 
 
     }
@@ -349,7 +352,7 @@ h2,
 
 
     #webshoppil {
-        color: #0303d7;
+        color: #f1f1f1;
 
     }
 
@@ -561,7 +564,11 @@ h2,
 
 @media all and (min-width: 769px) {
 
-        body {background-color: red;}
+
+    .webshop {
+        display: none;
+    }
+
     .mobilheader {
         display: none;
     }
@@ -571,16 +578,321 @@ h2,
     }
 
 
-   
+    .desktopimg {
+        width: 100%;
+    }
+
+    .aarhusrenseri {
+        width: 70%;
+    }
+
+    .silkeborgrenseri {
+        width: 70%;
+    }
+
+
+
+
+
+
+
+
+
+
+    .desktopwebshop {
+        grid-area: webshop;
+    }
+
+    .desktopaarhus {
+        grid-area: aarhus;
+    }
+
+    .desktopsilke {
+        grid-area: silke;
+    }
+
+
+
+    #landingmenu {
+        margin-top: 4%;
+        margin-left: %
+    }
+
+
+
+    /* webshop knappen*/
+    .webshop {
+        width: 91%;
+
+    }
+
+    .webshop_container {
+        position: relative;
+        text-align: center;
+    }
+
+    .tekst_webshop {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #1f2022;
+        color: white;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 2%;
+        border: solid;
+        5px;
+        border-color: #f1f1f1;
+
+
+    }
+
+    .tekst_webshop p {
+        font-size: 25px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+
+
+    #webshoppil {
+        color: #f1f1f1;
+
+    }
+
+
+
+    /* renserierne knapper*/
+
+
+
+
+    /* Århus renseri knap*/
+
+    .aarhusrenseri {
+
+        width: 90%;
+        margin-left: 2%
+    }
+
+
+
+    .aarhuscontainer {
+        position: relative;
+        text-align: center;
+    }
+
+    .aarhus_tekst {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #1f2022;
+        color: white;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 2%;
+        border: solid;
+        border-color: #ff6819;
+
+
+
+    }
+
+    .aarhus_tekst p {
+        font-size: 100%;
+        text-align: center;
+        text-transform: uppercase;
+
+
+
+    }
+
+
+    /*Silkeborg renseri knap*/
+
+    .silkeborgrenseri {
+        width: 90%;
+        margin-left: 2.5%
+    }
+
+
+    .silkeborgcontainer {
+        position: relative;
+        text-align: center;
+    }
+
+    .silkeborg_tekst {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #1f2022;
+        color: white;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 2%;
+        border: solid;
+        border-color: #ff6819;
+    }
+
+    .silkeborg_tekst p {
+        font-size: 100%;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .renseripil {
+        color: #ff6819;
+    }
+
+
+
+
+    .landingdeskmenu {
+
+        display: grid;
+        grid-gap: 2%;
+        margin-left: 28%;
+
+
+
+        grid-template-columns: 35% 27.5%;
+        grid-template-areas: "webshop  aarhus"
+            "webshop aarhus"
+            "webshop  silke"
+            "webshop silke"
+    }
+
+
+
+    .storytelling1 {
+        margin-top: 15%;
+        margin-left: 8%;
+        margin-right: 8%;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+    }
+
+    .fyr1 {
+        width: 40%;
+    }
+
+    #streetfyr {
+        width: 100%;
+    }
+
+    .story1 {
+        width: 55%;
+        padding-top: 7%
+    }
+
+
+    .storytelling2 {
+        margin-top: 15%;
+        margin-right: 8%;
+        margin-left: 8%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .sko1 {
+        width: 35%;
+    }
+
+    .storysneaks {
+        width: 100%;
+    }
+
+    .story2 {
+        width: 55%;
+        padding-top: 6%
+    }
+
+    
+    
+     .citat {
+        margin-top: 16%;
+        font-style: italic;
+
+    }
+
+    .citatdennis {
+        font-weight: bold;
+        text-align: center;
+    }
     
     
     
-    footer {background-color: #f1f1f1;}
+      .storytelling3 {
+        margin-top: 15%;
+        margin-left: 8%;
+        margin-right: 8%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-content: center;
+        margin-bottom: 15%;
+    }
+
+    .pige {
+        width: 40%;
+    }
+
+    .storypige {
+        width: 100%;
+    }
+
+    .story3 {
+        width: 55%;
+        padding-top: 7%;
+        margin-right: 1%;
+    }
     
-   
-    .facebook {width: 5%;}
-    .instagram {width: 5%;}
-    .nyheddesk {display: flex; justify-content: center;} }
+    .landingoverskrift {
+        text-align: center;
+        font-size: 150%
+    }
+
+
+    footer {
+        background-color: #f1f1f1;
+    }
+
+
+    .facebook {
+        width: 5%;
+    }
+
+    .instagram {
+        width: 5%;
+    }
+
+    .nyheddesk {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .mail {
+
+        margin-top: 50%;
+
+    }
     
     
- 
+    
+
+    .tilmeldknap {
+        margin-top: 138%;
+        padding: 3%;
+        padding-left: 6%;
+        padding-right: 6%;
+
+        color: white;
+        background-color: #1f2022;
+        border: none;
+    }
