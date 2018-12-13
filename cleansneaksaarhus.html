@@ -141,7 +141,7 @@
         </section>
     </article>
 
-    <article class="anbefaliner-og-hvorfor-cleansneaks">
+    <article class="anbefalinger-container">
         <a id="anbefalinger"></a>
         <div class="overskrift-anbefalinger">
             <h2>Anbefalinger</h2>
@@ -160,57 +160,66 @@
     </article>
     <a id="hvorfor-clean-sneaks"></a>
     <article class="hvorfor-clean-sneaks">
-        <h2>Clean Sneaks vs. Dirty Sneaks</h2>
-        <p>Det er ikke for sjov vi hedder <i>CleanSneaks</i>. Se selv hvor lækre dine sneaks kan blive, efter en tur i vores renseri. Stryg med rensebørsten og se renseeffekten</p>
+        <section class="hvorfor-clean-sneaks-tekst">
+            <h2>Clean Sneaks vs. Dirty Sneaks</h2>
+            <p>Det er ikke for sjov vi hedder <i>CleanSneaks</i>. Se selv hvor lækre dine sneaks kan blive, efter en tur i vores renseri. Stryg med rensebørsten og se renseeffekten</p>
+        </section>
         <div class="twentytwenty-container">
-            <img src="images/beskidt-sneak.jpg">
-            <img src="images/ren-sneak.jpg">
+            <img src="images/beskidt-sneak.jpg" alt="beskidt sneaker" width="100%">
+            <img src="images/ren-sneak.jpg" alt="ren sneaker" width="100%">
         </div>
     </article>
 
 
     <a id="hvor-er-boksen"></a>
-    <article class="hvor-er-boksen">
+    <aricle class="hvor-er-boksen">
         <section class="hvor-er-boksen-tekst">
             <h2>Hvor er drop-off boksen?</h2>
             <p>Vores drop-off boks ligger i <b>Galleri Grisk</b> ved <b>Klostertorvet</b>.<br>
                 Brug vores map til at finde Galleri Grisk, og brug billedguiden til at finde boksen inde i Galleri Grisk. Clean Sneaks drop-off boksen er venlig selvbetjening, så vores venner i Galleri Grisk hjælper dig gerne. </p>
         </section>
-        <!-- Snippet fra https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp -->
-        <div class="map-container">
-            <div id='map'></div>
-            <!-- The grid: five columns -->
-        </div>
-    </article>
-    <div class="row">
-        <div class="column">
-            <img src="images/stifinder-grisk-1.JPG" alt="Nature" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-            <img src="images/stifinder-grisk-2.JPG" alt="Snow" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-            <img src="images/stifinder-grisk-3.JPG" alt="Mountains" onclick="myFunction(this);">
-        </div>
-        <div class="column">
-            <img src="images/stifinder-grisk-4.JPG" alt="Lights" onclick="myFunction(this);">
-        </div>
+        <section class="map-og-guide">
+            <article class="hvor-er-boksen-map">
+                <!-- Snippet fra https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp -->
+                <div class="map-container">
+                    <div id='map'></div>
+                    <!-- The grid: five columns -->
+                </div>
+            </article>
+            <section class="billede-guide">
+            <div class="row">
+                <div class="column">
+                    <img src="images/stifinder-grisk-1.JPG" alt="Nature" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/stifinder-grisk-2.JPG" alt="Snow" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/stifinder-grisk-3.JPG" alt="Mountains" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                    <img src="images/stifinder-grisk-4.JPG" alt="Lights" onclick="myFunction(this);">
+                </div>
 
-        <div class="column">
-            <img src="images/stifinder-grisk-5.JPG" alt="Lights" onclick="myFunction(this);">
-        </div>
-    </div>
-    <!-- The expanding image container -->
-    <div class="container">
-        <!-- Close the image -->
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                <div class="column">
+                    <img src="images/stifinder-grisk-5.JPG" alt="Lights" onclick="myFunction(this);">
+                </div>
+            </div>
+            <!-- The expanding image container -->
+            <div class="container">
+                <!-- Close the image -->
+                <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
-        <!-- Expanded image -->
-        <img id="expandedImg" style="width:70%">
+                <!-- Expanded image -->
+                <img id="expandedImg" style="width:100%">
 
-        <!-- Image text -->
-        <div id="imgtext"></div>
-    </div>
+                <!-- Image text -->
+                <div id="imgtext"></div>
+            </div>
+        </section>
+        </section>
+    </aricle>
+
     <a id="kontakt-og-priser"></a>
     <article class="kontakt-og-priser">
         <section class="tekst-kontakt-og-pris">
@@ -231,7 +240,6 @@
         </section>
         <img class="galleri-grisk" src="images/galleri-grisk.jpg" alt="Galleri Grisk">
     </article>
-
 
     <footer class="footerlanding">
         <!--  <img src="images/prototype-footer-landing.jpg" alt="prototype footer">
@@ -267,8 +275,6 @@
 
                     <a href=""> <img class="instagram" src="images/instagram_icon.png"> </a>
                 </div>
-
-                <a href=""> <img class="instagram" src="images/instagram_icon.png"> </a>
             </div>
         </section>
 

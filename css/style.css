@@ -60,8 +60,8 @@ h2,
 
 
     /*--------------------------styles til clean sneaks århus underside------------------*/
-    
-    
+
+
     /* Landing Page på Århus siden*/
 
     .landing-page {
@@ -212,7 +212,7 @@ h2,
 
     /* Anbefalinger */
 
-    .anbefaliner-og-hvorfor-cleansneaks {
+    .anbefalinger-container {
         background-color: #1f2022;
         padding-top: 10%;
         padding-bottom: 10%;
@@ -285,7 +285,8 @@ h2,
         height: 50vh;
         margin: 5%;
     }
-        #map {
+
+    #map {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -385,9 +386,9 @@ h2,
 
     /*--------------------------styles til clean sneaks forside------------------*/
 
-  /*generelt til forsiden*/
+    /*generelt til forsiden*/
     .landingoverskrift {
-      
+
         margin-top: 15%;
         font-size: 150%;
 
@@ -402,8 +403,8 @@ h2,
     }
 
     .storypige {display: none;}
-    
-   
+
+
 
 
 
@@ -414,9 +415,9 @@ h2,
     #landingmenu {
         margin-top: 10%;
     }
-    
+
     .deskaarhus {display: none;}
-    
+
     .desksilke {display: none;}
 
 
@@ -677,10 +678,10 @@ h2,
 
 
 
-/*Clean Sneaks Forside / Landingpaoge*/
+    /*Clean Sneaks Forside / Landingpaoge*/
 
 /*Generelt på forsiden*/
-    
+
 
 .webshop {
         display: none;
@@ -695,19 +696,21 @@ h2,
         opacity: 0.7;
     }
 
-    .storypige1 {display: none;}
+    .storypige1 {
+        display: none;
+    }
 
-       #landingmenu {
+    #landingmenu {
         margin-top: 4%;
         margin-left: %
     }
 
 
-    
 
 
 
-/*desktop menu knapper landing*/
+
+    /*desktop menu knapper landing*/
 
 
 
@@ -761,25 +764,29 @@ h2,
     }
 
 
-    .desktopwebshop { transition: transform .2s}
+    .desktopwebshop {
+        transition: transform .2s
+    }
 
-    .desktopwebshop:hover { transform: scale(1.1)}
+    .desktopwebshop:hover {
+        transform: scale(1.1)
+    }
 
 
-    
-    
+
+
 
     /* renserierne knapper tekst på billederne*/
 
     .mobilaarhus {display: none;}
     .mobilsilke {display: none;}
-    
-    
+
+
     .aarhuscontainer {
          position: relative;
         text-align: center;
-        
-        
+
+
     }
 
     .aarhus_tekst {
@@ -795,29 +802,29 @@ h2,
         padding-top: 2%;
         border: solid;
         5px;
-        border-color: #ff6819      
-        
-        
+        border-color: #ff6819
+
+
     }
-    
-    
+
+
      .aarhus_tekst p {
         font-size: 25px;
         text-align: center;
         text-transform: uppercase;
     }
-    
+
      .deskaarhus { transition: transform .2s}
 
     .deskaarhus:hover { transform: scale(1.1)}
-    
-    
-    
+
+
+
      .silkeborgcontainer {
          position: relative;
         text-align: center;
-        
-        
+
+
     }
 
     .silkeborg_tekst {
@@ -833,30 +840,30 @@ h2,
         border: solid;
         5px;
         opacity: 0.9;
-        border-color: #ff6819   
-        
-        
+        border-color: #ff6819
+
+
     }
-    
-    
+
+
      .silkeborg_tekst p {
         font-size: 25px;
         text-align: center;
         text-transform: uppercase;
     }
-    
+
        .desksilke { transition: transform .2s}
 
     .desksilke:hover { transform: scale(1.1)}
-    
-    
+
+
       .renseripil {
         color: #ff6819;
     }
-    
-    
+
+
     /*flexbox på desktop*/
-    
+
     .landingdeskmenu {display: flex; flex-direction: row; justify-content: space-between;}
 
     /*Storytelling desktop*/
@@ -912,7 +919,7 @@ h2,
 
 
 
-     .citat {
+    .citat {
         margin-top: 16%;
         margin-left: 10%;
         font-style: italic;
@@ -926,7 +933,7 @@ h2,
 
 
 
-      .storytelling3 {
+    .storytelling3 {
         margin-top: 15%;
         margin-left: 8%;
         margin-right: 8%;
@@ -956,11 +963,11 @@ h2,
     }
 
     .landingoverskrift {
-        
+
         font-size: 150%
     }
 
-     #landinglink,
+    #landinglink,
     #landinglink1,
     #landinglink2 {
         color: #1f2022;
@@ -1162,10 +1169,9 @@ h2,
 
     /* Anbefalinger */
 
-    .hvorfor-clean-sneaks {
-        
-    }
-    
+
+
+
     .anbefalinger {
         width: 100%;
         position: relative;
@@ -1179,16 +1185,21 @@ h2,
         text-align: center;
     }
 
+    .anbefalinger-container {
+        position:
+    }
+
     .anbefaling {
         position: absolute;
+        width: 60%;
+        height: 100%;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
-        transform: translate(28.5%, 0%);
+        transform: translate(25%, 0%);
     }
 
     .knap-hoejre {
+        position: relative;
         color: #fff;
         background-color: #1f2022;
         border: none;
@@ -1199,6 +1210,7 @@ h2,
     }
 
     .knap-venstre {
+        position: relative;
         color: #fff;
         background-color: #1f2022;
         border: none;
@@ -1210,20 +1222,48 @@ h2,
 
     /* Twenty-twenty slider */
 
+    .hvorfor-clean-sneaks h2 {
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+    }
+
+    .hvorfor-clean-sneaks-tekst {
+        width: 60%;
+        position: relative;
+    }
+
+    .hvorfor-clean-sneaks {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+
+    }
+
 
 
     /* Hvor er drop-off boksen? */
 
-    .hvor-er-boksen {
-        position: relative;
-        height: 50vh;
-        margin: 8%;
+    .map-og-guide {
+        display: flex;
+        flex-direction: row;
     }
 
-    .hvor-er-boksen h2 {
+    .hvor-er-boksen-map {
+        position: relative;
+        height: 70vh;
+        width: 50%;
+        margin-left: 5%;
+    }
+
+    .hvor-er-boksen-tekst h2 {
         text-decoration: underline;
         text-decoration-color: #ff6819;
+    }
+
+    .hvor-er-boksen-tekst {
         margin: 5%;
+        margin-top: 10%;
+        width: 46%;
     }
 
     #map {
@@ -1233,23 +1273,92 @@ h2,
         width: 100%;
     }
 
+    .billede-guide {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 3%;
+    }
+
+    /* Snippet https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp  */
+
+    /* The grid: Four equal columns that floats next to each other */
+    .column {
+        position: abs;
+        width: 20%;
+        padding-left: 10px;
+    }
+
+    .row {
+        width: 80%;
+        display: flex;
+        align-content: center;
+    }
+
+    /* Style the images inside the grid */
+    .column img {
+        width: 100%;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .column img:hover {
+        opacity: 1;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+    }
+
+    /* The expanding image container (positioning is needed to position the close button and the text) */
+    .container {
+        position: relative;
+        width: 85%;
+        display: none;
+        margin-top: 5%;
+    }
+
+    /* Expanding image text */
+    #imgtext {
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        color: white;
+        font-size: 20px;
+    }
+
+    /* Closable button inside the image */
+    .closebtn {
+        position: absolute;
+        color: white;
+        font-size: 70px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+
     /* Kontakt og pris */
 
     .kontakt-og-priser {
         display: flex;
         margin-left: 8%;
         margin-right: 8%;
-        justify-content: space-between;
+        justify-content: space-around;
+        margin-bottom: 5%;
     }
 
     .kontakt-og-priser h2 {
         text-decoration: underline;
         text-decoration-color: #ff6819;
         padding-top: 8%;
+        text-align: center;
     }
 
     .kontakt-og-priser p {
         font-size: 20px;
+        text-align: center;
     }
 
     .galleri-grisk {
@@ -1261,8 +1370,8 @@ h2,
 
 
     /*footer med nyhedsbrev*/
-    
-    
+
+
     .nyheddesk {display: flex; flex-direction: column; }
   .footerlanding {
         margin-top: 20%;
@@ -1271,28 +1380,28 @@ h2,
 
 
     .nyhedsbrev {
-        
+
         text-align: center;
     }
 
-    
 
-   
+
+
 
     .mail {
       width: 20%;
-        margin-left: 39.5%; 
+        margin-left: 39.5%;
     }
 
     .tilmeldknap {
-        
+
         padding: 1%;
         padding-left: 2%;
         padding-right: 2%;
         margin-left: 46.5%;
         margin-top: 1%;
-        
-      
+
+
         color: white;
         background-color: #1f2022;
         border: none;
@@ -1306,30 +1415,41 @@ h2,
     .facebook {width: 5%;}
     .instagram {width: 5%;}
     .handelsb {float: right; margin-right: 2%;}
-    
+
     .some {margin-left: 2%;}
-    
-    
-    
-   
+
+
+
+
 @media all and (min-width: 1100px) {
 
 
-    #test p {line-height: 200%}
+    #test p {
+        line-height: 200%
+    }
 
-    .story1, .citat, .story3 { padding-left: 5% ; padding-right: 5%;}
+    .story1,
+    .citat,
+    .story3 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 
 
-    .story1 {padding-top: 16%;}
+    .story1 {
+        padding-top: 16%;
+    }
 
     .citat {padding-top: 5%; text-align: center;}
 
-    .story3 {padding-top: 9%;}
+    .story3 {
+        padding-top: 9%;
+    }
 
     .landingoverskrift {font-size: 250%;}
-    
-    
-    
-    
-    
+
+
+
+
+
 }
