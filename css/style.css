@@ -56,13 +56,14 @@ h2,
         position: relative;
         background-color: #f1f1f1;
         width: 100%;
-        height: 60px;
+        height: 80px;
     }
-
+    
     .header-nav {
-        padding-top: 10px;
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
     }
 
 
@@ -71,9 +72,13 @@ h2,
     }
 
     .header-section-1 {
-        width: 50%;
+        width: 40%;
     }
 
+    .header-section-2 {
+        margin-left: 20%;
+    }
+    
     .header-section-2 h3 {
         display: none;
 
@@ -88,6 +93,13 @@ h2,
     .header-section-3 img {
         width: 30px;
         height: 30px;
+        margin-left: 30%;
+    }
+    
+    .header-section-3-2 {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
     }
 
     .sprog-valg {
@@ -109,7 +121,7 @@ h2,
         padding: 10px;
         color: black;
     }
-
+    
     .menuheader a:hover {
         color: #ff6819;
     }
@@ -137,12 +149,17 @@ h2,
     .menu {
         display: flex;
         flex-direction: column;
-        width: 55%;
+        width: 0%;
         display: none;
         position: absolute;
         font-family: 'Axiforma';
+        text-align: left;
         font-size: 20px;
         background-color: white;
+    }
+    
+    .menu a {
+        text-align: right;
     }
 
 
@@ -160,14 +177,14 @@ h2,
     }
 
     #toggle:checked + .menu {
-        display: flex;
-        position: absolute;
+        display: flex;        
 
     }
 
     .menuheader {
         position: relative;
         z-index: 2;
+        margin-left: -300%;
 
     }
 
@@ -514,7 +531,6 @@ h2,
 
         margin-top: 15%;
         font-size: 150%;
-        margin-left: 8%;
 
     }
 
@@ -532,9 +548,7 @@ h2,
 
 
 
-    .landingoverskrift {text-decoration: underline;}
 
-    #velkommen {text-align: center; font-style: italic; font-size: 200%; }
 
 
 
@@ -576,7 +590,7 @@ h2,
         padding-top: 2%;
         border: solid;
         5px;
-        border-color: #024e9a;
+        border-color:  #024e9a;
 
 
     }
@@ -590,7 +604,7 @@ h2,
 
 
     #webshoppil {
-        color: #024e9a;
+        color:  #024e9a;
 
     }
 
@@ -709,7 +723,6 @@ h2,
     .citat {
         margin-top: 16%;
         font-style: italic;
-        text-align: center;
 
     }
 
@@ -739,7 +752,7 @@ h2,
     #landinglink2 {
         color: #1f2022;
     }
-    .youchoose {font-style: italic;}
+
 
 
 
@@ -814,7 +827,7 @@ h2,
     /*Clean Sneaks Forside / Landingpage*/
 
     /* ------ Header menu dekstop -------- */
-
+    
     .header-nav {
         display: flex;
         justify-content: space-between;
@@ -837,7 +850,7 @@ h2,
     .header-section-2 {
         display: flex;
         flex-direction: column;
-         align-items: center;
+        align-items: center;
     }
 
     .header-section-3 {
@@ -847,10 +860,11 @@ h2,
         margin-left: 8%;
         margin-right: 8%;
     }
-
+    
     .header-section-3-2 {
         display: flex;
         flex-direction: row;
+        width: 80%;
     }
 
     .header-section-3 img {
@@ -873,7 +887,7 @@ h2,
 
     .menuheader {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         text-align: center;
         font-family: 'Axiforma';
         font-size: 14px;
@@ -881,6 +895,7 @@ h2,
     }
 
     .menuheader a {
+
         text-decoration: none;
         padding-left: 20px;
         color: black;
@@ -931,10 +946,9 @@ h2,
     }
 
 
-.landingoverskrift {text-decoration: underline;}
 
 
-    #velkommen {text-align: center; font-style: italic; font-size: 300%;}
+
 
     /*desktop menu knapper landing*/
 
@@ -1202,8 +1216,6 @@ h2,
         padding-top: 7%;
         margin-right: 4%;
     }
-
-        .youchoose {font-style: italic;}
 
     .landingoverskrift {
 
@@ -1625,15 +1637,97 @@ h2,
     /*footer med nyhedsbrev*/
 
 
-    .nyheddesk {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .footerlanding {
+  
+    .nyheddesk {display: flex; flex-direction: column; }
+  .footerlanding {
         margin-top: 20%;
         background-color: #f1f1f1;
+   
+    }
 
+    .nyhedsbrev {
+
+        text-align: center;
+    }
+    .mail {
+      width: 20%;
+        margin-left: 39.5%;
+    }
+
+    .tilmeldknap {
+
+        padding: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-left: 45%;
+        margin-top: 1%;
+
+
+        color: white;
+        background-color: #1f2022;
+        border: none;
+    }
+
+    .footercleansneaks {
+        text-align: center;
+
+    }
+
+    .facebook {width: 5%;}
+    .instagram {width: 5%;}
+
+.some {text-align: center; padding-bottom: 1%}
+
+
+    .nyheddesk {display: flex; flex-direction: column; }
+  .footerlanding {
+        margin-top: 20%;
+        background-color: #f1f1f1;
+   
+    }
+
+
+    .nyhedsbrev {
+
+        text-align: center;
+    }
+
+
+    .mail {
+      width: 20%;
+        margin-left: 39.5%;
+    }
+
+    .tilmeldknap {
+
+        padding: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
+        margin-left: 45%;
+        margin-top: 1%;
+
+
+        color: white;
+        background-color: #1f2022;
+        border: none;
+    }
+
+    .footercleansneaks {
+        text-align: center;
+
+    }
+
+    .facebook {width: 5%;}
+    .instagram {width: 5%;}
+
+.some {text-align: center; padding-bottom: 1%}
+
+
+    .nyheddesk {display: flex; flex-direction: column; }
+  .footerlanding {
+        margin-top: 20%;
+        background-color: #f1f1f1;
+   
     }
 
 
@@ -1647,7 +1741,7 @@ h2,
 
 
     .mail {
-        width: 20%;
+      width: 20%;
         margin-left: 39.5%;
     }
 
@@ -1678,12 +1772,8 @@ h2,
 
 
 
-
-
     @media all and (min-width: 1100px) {
 
-
-       #velkommen {text-align: center; font-style: italic; font-size: 400%;}
 
         #test p {
             line-height: 200%
@@ -1698,27 +1788,24 @@ h2,
 
 
         .story1 {
-            padding-top: 16%;
+            padding-top: 10%;
         }
 
         .citat {
-            padding-top: 5%;
+            padding-top: 2%;
             text-align: center;
         }
 
         .story3 {
-            padding-top: 9%;
+            padding-top: 5%;
         }
 
         .landingoverskrift {
             font-size: 250%;
         }
 
-/*footer med nyhedsbrev*/
 
-
-
-  .footerlanding {
+          .footerlanding {
         margin-top: 20%;
         background-color: #f1f1f1;
     }
@@ -1755,13 +1842,15 @@ h2,
     .footercleansneaks {
         text-align: center;
         margin-top:;
-
+     
     }
 
     .facebook {width: 5%;}
     .instagram {width: 5%;}
-
+  
     .handelsb {float: right; margin-right: 2%; margin-top: 0.5%;}
+
+
 
 
     }
