@@ -38,163 +38,165 @@ h2,
 /* -------- CleanSneaks Århus ------ */
 
 /*---------Styling burgermenu-------*/
-.hjem{
-  width: 10%;
-  text-align: left;
+.hjem {
+    width: 10%;
+    text-align: left;
 }
+
 a {
     color: green;
-  }
+}
 
 .wrapper {
-  display:fixed;
-  width:100%;
-  height:150px;
-  }
+    display: fixed;
+    width: 100%;
+    height: 150px;
+}
 
 .nav-wrap {
-  width:50%;
-  margin: 0 auto;
-  }
+    width: 50%;
+    margin: 0 auto;
+}
 
 #menu {
-  display:none;
-  }
+    display: none;
+}
 
 #navdestop {
-	overflow: hidden;
-	transition: top 1s ease-in-out;
-	background: #fcfcfc;
-	margin-top: 0;
-	position: fixed;
-  width:100%;
-  left:0;
-  right:0;
-  height:100%;
-  top:-100%;
-  }
+    overflow: hidden;
+    transition: top 1s ease-in-out;
+    background: #fcfcfc;
+    margin-top: 0;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 100%;
+    top: -100%;
+}
 
 #menu:checked ~ #navdestop {
-	top:0;
-  }
+    top: 0;
+}
 
 #navdestop ul {
-	height: 100%;
-	width: 90%;
-	padding-top: 0;
-	left: 0;
-	margin-left: 5%;
-  position:absolute;
-  top:0;
-	}
+    height: 100%;
+    width: 90%;
+    padding-top: 0;
+    left: 0;
+    margin-left: 5%;
+    position: absolute;
+    top: 0;
+}
 
 #navdestop ul li {
-	display:block;
-	text-align: left;
-	position: relative;
-	top: 0;
-	transition: top 1s ease-in-out;
-	margin: 0;
-	}
+    display: block;
+    text-align: left;
+    position: relative;
+    top: 0;
+    transition: top 1s ease-in-out;
+    margin: 0;
+}
 
 #navdestop a {
-	display: inline-block;
-	font: 5px 'worksans_bold';
-	text-decoration: none;
-	position: relative;
-	color:#f0f0f0;
-	}
+    display: inline-block;
+    font: 5px 'worksans_bold';
+    text-decoration: none;
+    position: relative;
+    color: #f0f0f0;
+}
 
 #navigation-animation {
-	height: 100%;
-	}
+    height: 100%;
+}
 
 /* #################### Burgermenu ######################## */
 
 .burger_menu {
-	position: fixed;
-	top: 35px;
-	right: 5%;
-	display: block;
-	cursor: pointer;
-	height: 21px;
-	width: 25px;
-	z-index: 101;
-	}
+    position: fixed;
+    top: 35px;
+    right: 5%;
+    display: block;
+    cursor: pointer;
+    height: 21px;
+    width: 25px;
+    z-index: 101;
+}
 
 .burger_menu span {
-	display: block;
-	top: 8px;
+    display: block;
+    top: 8px;
     height: 3px;
     background: #1d1d1d;
-	position: relative;
-	-webkit-transition: width 0.2s ease-in-out;
-	-moz-transition: width 0.2s ease-in-out;
-	-o-transition: width 0.2s ease-in-out;
-	transition: width 0.2s ease-in-out;
-	}
+    position: relative;
+    -webkit-transition: width 0.2s ease-in-out;
+    -moz-transition: width 0.2s ease-in-out;
+    -o-transition: width 0.2s ease-in-out;
+    transition: width 0.2s ease-in-out;
+}
 
 .burger_menu span {
-	width: 25px;
-	}
+    width: 25px;
+}
 
-.burger_menu span::after, .burger_menu span::before {
-	display: block;
-  position: absolute;
-	width: 25px;
-	height: 3px;
-	background: #1d1d1d;
-	transition-property: margin, -webkit-transform;
-	-webkit-transition-property: margin, -webkit-transform;
-	-webkit-transition-duration: 0.2s;
-	-moz-transition-duration: 0.2s;
-	-ms-transition-duration: 0.2s;
-	-o-transition-duration: 0.2s;
-	transition-duration: 0.2s;
-	-webkit-transition-delay: 0.2s, 0s;
-	-moz-transition-delay: 0.2s, 0s;
-	-ms-transition-delay: 0.2s, 0s;
-	-o-transition-delay: 0.2s, 0s;
-	transition-delay: 0.2s, 0s;
-	}
+.burger_menu span::after,
+.burger_menu span::before {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: #1d1d1d;
+    transition-property: margin, -webkit-transform;
+    -webkit-transition-property: margin, -webkit-transform;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration: 0.2s;
+    -ms-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -webkit-transition-delay: 0.2s, 0s;
+    -moz-transition-delay: 0.2s, 0s;
+    -ms-transition-delay: 0.2s, 0s;
+    -o-transition-delay: 0.2s, 0s;
+    transition-delay: 0.2s, 0s;
+}
 
 .burger_menu span::before {
-	margin-top: -8px;
-  	}
+    margin-top: -8px;
+}
 
 .burger_menu span::after {
-  margin-top: 8px;
-  }
+    margin-top: 8px;
+}
 
 #menu:checked ~ .burger_menu span::before,
 #menu:checked ~ .burger_menu span::after {
-	margin-top: 0px;
-	-webkit-transition-delay: 0.1s, 0.5s;
-	-moz-transition-delay: 0.1s, 0.5s;
-	-ms-transition-delay: 0.1s, 0.5s;
-	-o-transition-delay: 0.1s, 0.5s;
-	transition-delay: 0.1s, 0.5s;
-	}
+    margin-top: 0px;
+    -webkit-transition-delay: 0.1s, 0.5s;
+    -moz-transition-delay: 0.1s, 0.5s;
+    -ms-transition-delay: 0.1s, 0.5s;
+    -o-transition-delay: 0.1s, 0.5s;
+    transition-delay: 0.1s, 0.5s;
+}
 
 #menu:checked ~ .burger_menu span::before {
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
-	}
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
 
 #menu:checked ~ .burger_menu span::after {
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	}
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
 
-#menu:checked ~ .burger_menu span{
-	width:0;
-	}
+#menu:checked ~ .burger_menu span {
+    width: 0;
+}
 
 
 /* styling burger slut*/
@@ -371,7 +373,7 @@ a {
 
     /* Anbefalinger */
 
-    .anbefaliner-og-hvorfor-cleansneaks {
+    .anbefalinger-container {
         background-color: #1f2022;
         padding-top: 10%;
         padding-bottom: 10%;
@@ -444,7 +446,8 @@ a {
         height: 50vh;
         margin: 5%;
     }
-        #map {
+
+    #map {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -544,7 +547,7 @@ a {
 
     /*--------------------------styles til clean sneaks forside------------------*/
 
-  /*generelt til forsiden*/
+    /*generelt til forsiden*/
     .landingoverskrift {
         text-align: center;
         margin-top: 15%;
@@ -560,7 +563,9 @@ a {
         display: none;
     }
 
-    .storypige {display: none;}
+    .storypige {
+        display: none;
+    }
 
 
 
@@ -833,10 +838,10 @@ a {
 
 
 
-/*Clean Sneaks Forside / Landingpaoge*/
+    /*Clean Sneaks Forside / Landingpaoge*/
 
-/*Generelt på forsiden*/
-.webshop {
+    /*Generelt på forsiden*/
+    .webshop {
         display: none;
     }
 
@@ -849,35 +854,40 @@ a {
         opacity: 0.7;
     }
 
-    .storypige1 {display: none;}
+    .storypige1 {
+        display: none;
+    }
 
-       #landingmenu {
+    #landingmenu {
         margin-top: 4%;
         margin-left: %
     }
 
 
     /*para*/
-    #test {background-image: url(../images/shoot-n-design-70930-unsplash.jpg);
+    #test {
+        background-image: url(../images/shoot-n-design-70930-unsplash.jpg);
 
-  height: 100%;
+        height: 100%;
 
 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
 
-    #landingmenu {background-image: url(../images/test.jpg;);}
+    #landingmenu {
+        background-image: url(../images/test.jpg;);
+    }
 
 
-/*desktop menu knapper landing*/
+    /*desktop menu knapper landing*/
 
 
 
-   .desktopimg {
+    .desktopimg {
         width: 103%;
     }
 
@@ -890,7 +900,7 @@ a {
     }
 
 
-/*desktop menu knapper landing GRID*/
+    /*desktop menu knapper landing GRID*/
 
     .desktopwebshop {
         grid-area: webshop;
@@ -914,7 +924,7 @@ a {
 
         display: grid;
         grid-gap: 2%;
-     margin-left: 28%;
+        margin-left: 28%;
 
         grid-template-columns: 35% 27.5%;
         grid-template-areas: "webshop  aarhus"
@@ -969,9 +979,13 @@ a {
     }
 
 
-    .desktopwebshop { transition: transform .2s}
+    .desktopwebshop {
+        transition: transform .2s
+    }
 
-    .desktopwebshop:hover { transform: scale(1.1)}
+    .desktopwebshop:hover {
+        transform: scale(1.1)
+    }
 
 
 
@@ -1024,9 +1038,14 @@ a {
     }
 
 
-      .desktopaarhus { transition: transform .2s}
+    .desktopaarhus {
+        transition: transform .2s
+    }
 
-    .desktopaarhus:hover { transform: scale(1.1)}
+    .desktopaarhus:hover {
+        transform: scale(1.1)
+    }
+
     /*Silkeborg renseri knap*/
 
     .silkeborgrenseri {
@@ -1065,9 +1084,13 @@ a {
         color: #ff6819;
     }
 
-    .desktopsilke { transition: transform .2s}
+    .desktopsilke {
+        transition: transform .2s
+    }
 
-    .desktopsilke:hover { transform: scale(1.1)}
+    .desktopsilke:hover {
+        transform: scale(1.1)
+    }
 
 
 
@@ -1124,7 +1147,7 @@ a {
 
 
 
-     .citat {
+    .citat {
         margin-top: 16%;
         margin-left: 10%;
         font-style: italic;
@@ -1138,7 +1161,7 @@ a {
 
 
 
-      .storytelling3 {
+    .storytelling3 {
         margin-top: 15%;
         margin-left: 8%;
         margin-right: 8%;
@@ -1172,7 +1195,7 @@ a {
         font-size: 150%
     }
 
-     #landinglink,
+    #landinglink,
     #landinglink1,
     #landinglink2 {
         color: #1f2022;
@@ -1374,9 +1397,8 @@ a {
 
     /* Anbefalinger */
 
-    .hvorfor-clean-sneaks {
-        
-    }
+
+    
     
     .anbefalinger {
         width: 100%;
@@ -1391,16 +1413,21 @@ a {
         text-align: center;
     }
 
+    .anbefalinger-container {
+        position:
+    }
+    
     .anbefaling {
         position: absolute;
+        width: 60%;
+        height: 100%;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
-        transform: translate(28.5%, 0%);
+        transform: translate(25%, 0%);
     }
 
     .knap-hoejre {
+        position: relative;
         color: #fff;
         background-color: #1f2022;
         border: none;
@@ -1411,6 +1438,7 @@ a {
     }
 
     .knap-venstre {
+        position: relative;
         color: #fff;
         background-color: #1f2022;
         border: none;
@@ -1422,28 +1450,122 @@ a {
 
     /* Twenty-twenty slider */
 
-
-
-    /* Hvor er drop-off boksen? */
-
-    .hvor-er-boksen {
-        position: relative;
-        height: 50vh;
-        margin: 8%;
-    }
-
-    .hvor-er-boksen h2 {
+    .hvorfor-clean-sneaks h2 {
         text-decoration: underline;
         text-decoration-color: #ff6819;
-        margin: 5%;
+    }
+    
+    .hvorfor-clean-sneaks-tekst {
+        width: 60%;
+        position: relative;
+    }
+    
+    .hvorfor-clean-sneaks {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+
     }
 
+    
+    
+    /* Hvor er drop-off boksen? */
+
+    .map-og-guide {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .hvor-er-boksen-map {
+        position: relative;
+        height: 70vh;
+        width: 50%;
+        margin-left: 5%;
+    }
+
+    .hvor-er-boksen-tekst h2 {
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+    }
+    
+    .hvor-er-boksen-tekst {
+        margin: 5%;
+        margin-top: 10%;
+        width: 46%;
+    }
+    
     #map {
         position: absolute;
         top: 0;
         bottom: 0;
         width: 100%;
     }
+    
+    .billede-guide {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 3%;
+    }
+    
+    /* Snippet https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp  */
+
+    /* The grid: Four equal columns that floats next to each other */
+    .column {
+        position: abs;
+        width: 20%;
+        padding-left: 10px;
+    }
+
+    .row {
+        width: 80%;
+        display: flex;
+        align-content: center;
+    }
+
+    /* Style the images inside the grid */
+    .column img {
+        width: 100%;
+        opacity: 0.8;
+        cursor: pointer;
+    }
+
+    .column img:hover {
+        opacity: 1;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+    }
+
+    /* The expanding image container (positioning is needed to position the close button and the text) */
+    .container {
+        position: relative;
+        width: 85%;
+        display: none;
+        margin-top: 5%;
+    }
+
+    /* Expanding image text */
+    #imgtext {
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+        color: white;
+        font-size: 20px;
+    }
+
+    /* Closable button inside the image */
+    .closebtn {
+        position: absolute;
+        color: white;
+        font-size: 70px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
 
     /* Kontakt og pris */
 
@@ -1451,17 +1573,20 @@ a {
         display: flex;
         margin-left: 8%;
         margin-right: 8%;
-        justify-content: space-between;
+        justify-content: space-around;
+        margin-bottom: 5%;
     }
 
     .kontakt-og-priser h2 {
         text-decoration: underline;
         text-decoration-color: #ff6819;
         padding-top: 8%;
+        text-align: center;
     }
 
     .kontakt-og-priser p {
         font-size: 20px;
+        text-align: center;
     }
 
     .galleri-grisk {
@@ -1522,16 +1647,31 @@ a {
 @media all and (min-width: 1100px) {
 
 
-    #test p {line-height: 200%}
+    #test p {
+        line-height: 200%
+    }
 
-    .story1, .citat, .story3 { padding-left: 5% ; padding-right: 5%;}
+    .story1,
+    .citat,
+    .story3 {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 
 
-    .story1 {padding-top: 16%;}
+    .story1 {
+        padding-top: 16%;
+    }
 
-    .citat {padding-top: 5%;}
+    .citat {
+        padding-top: 5%;
+    }
 
-    .story3 {padding-top: 9%;}
+    .story3 {
+        padding-top: 9%;
+    }
 
-    .landingoverskrift {font-size: 250%;}
+    .landingoverskrift {
+        font-size: 250%;
+    }
 }

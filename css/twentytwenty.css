@@ -277,3 +277,11 @@
     bottom: 50%;
     margin-bottom: -17px;
 }
+
+@media all and (min-width: 769px) {
+
+    .twentytwenty-container {
+        width: 50%;
+        position: absolute;
+    }
+}
