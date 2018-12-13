@@ -52,16 +52,47 @@ h2,
         margin: 5%;
     }
 
-
-    .mobilheader {
-        width: 100%;
+   
+    
+    .menuheader label {
+        display: block;
+        cursor: pointer;
+        float: right;
+        margin-right: 5%;;
+        
+      
     }
-
-    .deskheader {
+    .menu {
+        text-align: center;
+        width: 100%;
         display: none;
     }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid;
+        color: black;
+         font-family: 'axiforma';
+        text-decoration: none;
 
+    }
+    
+    #forside, #webshop, #aarhus, #silke, #om, #kontakt {color: black;}
+    
+    #toggle {display: none;}
+    
+        #toggle:checked + .menu {
+        display: block;
+    }
+    .menuheader {
+        position: relative;
+        z-index: 2;
+       
+    }
 
+    .logo {width: 30%; }
+    
+    
+    header {background-color: #f1f1f1;}
     /*--------------------------styles til clean sneaks århus underside------------------*/
 
 
@@ -688,6 +719,47 @@ h2,
 
 
     /*Clean Sneaks Forside / Landingpaoge*/
+    nav {
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid #000000;
+    text-align: right;
+    height: 100px;
+    line-height: 100px;
+    background-color: #2d2c2c;
+    font-family: 'Roboto Slab', serif;
+}
+
+.menu {
+    margin: 0 30px 0 0;
+    width: 100%;
+}
+
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    margin-right: 1%;
+    line-height: 70px;
+    background-color: #2d2c2c;
+    font-size: 72%;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 100px;
+    display: none;
+    width: 26px;
+    float: right;
+    color: #fff;
+}
+
+#toggle {
+    display: none;
+}
+
 
 /*Generelt på forsiden*/
 
