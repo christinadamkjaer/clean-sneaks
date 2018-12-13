@@ -448,6 +448,8 @@ h2,
 
 
     .landingoverskrift {text-decoration: underline;}
+    
+    #velkommen {text-align: center; font-style: italic; font-size: 200%; }
 
 
 
@@ -792,7 +794,7 @@ label {
 .landingoverskrift {text-decoration: underline;}
 
 
-
+    #velkommen {text-align: center; font-style: italic; font-size: 300%;}
 
     /*desktop menu knapper landing*/
 
@@ -1520,6 +1522,8 @@ label {
 
 @media all and (min-width: 1100px) {
 
+    
+       #velkommen {text-align: center; font-style: italic; font-size: 400%;}
 
     #test p {
         line-height: 200%
