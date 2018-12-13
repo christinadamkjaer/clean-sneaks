@@ -27,39 +27,31 @@
 <body>
   <header>
 
-    <!--Navigationsbar til burgermenu og home/tilbage knap-->
-    <div class="wrapper">
-      <div class="nav-wrap">
-        <input type="checkbox" id="menu">
-        <label for="menu" class="burger_menu"><span></span></label>
-        <nav id="navdestop">
-          <ul>
-            <li><a href ="#hvem-er-vi">Hvem er vi?</a></li>
-            <li><a href="#saa-nemt-er-det">Så nemt er det</a></li>
-            <li><a href="#tilbud-og-prisberegner">Tilbud og Prisberegner</a></li>
-            <li><a href="#anbefalinger">Anbefalinger</a></li>
-            <li><a href="#hvorfor-cleansneaks">Dirty Sneaks vs. Clean Sneaks </a></li>
-            <li><a href="#hvor-er-boksen">Hvor er drop-off boksen?</a></li>
-            <li><a href="#aabningstider-og-kontakt">Åbningstider og Kontakt</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+    <header>
+      <div>
 
+   </div>
+   <nav class="menuheader">
+                   <img class="logo" src="images/logo.png" alt="Clean sneaks">
+                    <label for="toggle">&#9776;</label>
+                    <input type="checkbox" id="toggle">
 
+                       <div class="menu">
+                        <a id="forside" href="index.html">Forside</a>
+                        <a  id="webshop" href="https://www.cleansneaks.dk/collections/all">Webshop</a>
+                        <a id="aarhus" href="cleansneaksaarhus.html">Århus renseri</a>
+                        <a id="silke" href="">Silkeborg renseri</a>
+                        <a id="om" href="">Om CleanSneaks</a>
+                        <a id="kontakt" href="">Kontakt</a>
+                    </div>
 
-
-    <a href="cleansneaksaarhus.html"> <img class="hjem" src="images/hjem.png" alt="">
-
-      <!--Navigationsbar slut-->
-
-      <!--  <img class="mobilheader" src="images/prototype-header.jpg" alt="prototype header">
-
-        <img class="deskheader" src="images/header_stor.jpg" alt="prototype header stor">
+                </nav>
 
       -->
 
   </header>
+
+
 
 
 
@@ -82,6 +74,8 @@
 
             <img class="desktopimg" src="images/desk_webshop.jpg" alt="Clean Sneaks Webshop">
 
+                            <p>besøg webshop</p>
+                            <p id="webshoppil">→</p>
 
             <div class="tekst_webshop">
 
@@ -97,11 +91,64 @@
 
       <div class="renserier">
 
+                <!-- århus renseri billedet-->
 
-        <!-- århus renseri billedet-->
-        <div class="desktopaarhus">
-          <a href="cleansneaksaarhus.html">
-            <div class="aarhuscontainer">
+                <!--mobil-->
+                <div class="mobilaarhus">
+                    <a href="cleansneaksaarhus.html">
+                        <div class="aarhuscontainer">
+
+                            <img class="aarhusrenseri" src="images/aarhus_renseri.jpg" alt="Clean Sneaks Århus renseri">
+
+
+                            <div class="aarhus_tekst">
+                                <p>Århus renseri</p>
+                                <p class="renseripil">→</p>
+
+                            </div>
+
+
+                        </div>
+                    </a>
+
+                </div>
+
+
+
+                <!-- Silkeborg renseri billedet-->
+                <!--mobil-->
+                <div class="mobilsilke">
+                    <a href="cleanssneakssilkeborg.html">
+                        <div class="silkeborgcontainer">
+
+                            <img class="silkeborgrenseri" src="images/silkeborg_renseri.jpg" alt="Clean Sneaks Silkeborg renseri">
+
+
+                            <div class="silkeborg_tekst">
+                                <p>Silkeborg Renseri</p>
+                                <p class="renseripil">→</p>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+
+                </div>
+
+                <!-- århus renseri billedet-->
+                <!--større skærme-->
+                <div class="deskaarhus">
+                    <a href="cleansneaksaarhus.html">
+                        <div class="aarhuscontainer">
+
+                            <img class="aarhusrenseri" src="images/%C3%A5rhus_rens_desk.jpg" alt="Clean Sneaks Århus renseri">
+
+
+
+                            <div class="aarhus_tekst">
+                                <p>Århus renseri</p>
+                                <p class="renseripil">→</p>
 
               <img class="aarhusrenseri" src="images/aarhus_renseri.jpg" alt="Clean Sneaks Århus renseri">
               <div class="aarhus_tekst">
@@ -114,13 +161,21 @@
             </div>
           </a>
 
-        </div>
 
-        <div class="desktopsilke">
 
-          <!-- Silkeborg renseri billedet-->
-          <a href="cleanssneakssilkeborg.html">
-            <div class="silkeborgcontainer">
+
+
+
+
+   <!-- Silkeborg renseri billedet-->
+
+                <!--større skærme-->
+                <div class="desksilke">
+                    <a href="cleanssneakssilkeborg.html">
+                        <div class="silkeborgcontainer">
+
+                            <img class="silkeborgrenseri" src="images/silke_rens_desk.jpg" alt="Clean Sneaks Silkeborg renseri">
+
 
               <!-- Silkeborg renseri billedet-->
               <a href="cleanssneakssilkeborg.html">
@@ -131,9 +186,10 @@
                     <p class="renseripil">→</p>
                   </div>
 
-                </div>
-              </a>
-            </div>
+
+
+
+
 
         </div>
 
@@ -176,20 +232,37 @@
         <img id="streetfyr" src="images/storytelling_street_mand.jpg" alt="Mand der anvender Clean Sneaks">
       </div>
 
-      <p class="citatdennis">- Dennis, Clean Sneaks Århus</p>
+        <section class="storytelling2">
+
+            <div class="story2">
+                <p class="citat">”Vi vil gerne sørge for at ingen render rundt med beskidte sneaks. Hvorfor er det anderledes hvordan du behandler et par sneaks modsat en hvid skjorte. Vil du tage på arbejde i en beskidt skjorte? Det skal være lige så vigtigt at have rene sko på, som rent tøj. Vi kæmper mod ligegyldigheden omkring sneakers. ”</p>
+
+                <p class="citatdennis">- Dennis, Clean Sneaks Århus</p>
+
+            </div>
+
+            <div class="sko1">
+
+                <img class="storysneaks" src="images/storytelling_ben.jpg" alt="hvide sneaks">
+                <img class="storypige1" src="images/storytelling_pige.jpg" alt="pige med hvide sneaks">
+
+            </div>
+        </section>
 
 
-      <section class="storytelling2">
+        <section class="storytelling3">
 
-        <div class="story2">
-          <p class="citat">”Vi vil gerne sørge for at ingen render rundt med beskidte sneaks. Hvorfor er det anderledes hvordan du behandler et par sneaks modsat en hvid skjorte. Vil du tage på arbejde i en beskidt skjorte? Det skal være lige så
-            vigtigt at have rene sko på, som rent tøj. Vi kæmper mod ligegyldigheden omkring sneakers. ”</p>
+            <div class="pige">
+                <img class="storypige" src="images/storytelling_pige.jpg" alt="pige med hvide sneaks">
+            </div>
 
-          <p class="citatdennis">- Dennis, Clean Sneaks Århus</p>
+            <div class="story3">
 
-        </div>
+                <h2 class="landingoverskrift">Renseri eller rens selv <br> <div class="youchoose">- you choose!</div></h2>
 
-        <div class="sko1">
+                <p>Hos Clean Sneaks vil vi gøre op med de beskidte sneaks. Om du er typen der renser selv eller lader andre gøre arbejdet, så har vi løsningen. Hop ind på vores <a id="landinglink" href="webshop.html">webshop</a> og tjek vores mange renseprodukter ud, eller gør brug af et af vores renserier i enten <a id="landinglink1" href="cleanssneakssilkeborg.html">Silkeborg</a> eller <a id="landinglink2" href="cleansneaksaarhus.html">Århus.</a> Lige meget hvilken løsning du er til garanterer vi Clean Sneaks. </p>
+            </div>
+        </section>
 
           <img class="storysneaks" src="images/storytelling_ben.jpg" alt="hvide sneaks">
 
@@ -223,6 +296,16 @@
   <footer class="footerlanding">
 
 
+
+        <!--handelsbetingelser og privatlivspolitik-->
+        <div class="handelsb">
+        <p class="footercleansneaks"> ©2013 Clean Sneaks <br> Privatlivspolitik & handelsbetingelser </p>
+        </div>
+
+
+
+        <!--Sociale medier ikoner-->
+        <div class="some">
 
     <!--nyhedsbrev begynder her-->
 
