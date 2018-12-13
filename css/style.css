@@ -52,47 +52,125 @@ h2,
         margin: 5%;
     }
 
-   
-    
-    .menuheader label {
-        display: block;
-        cursor: pointer;
-        float: right;
-        margin-right: 5%;;
-        
-      
-    }
-    .menu {
-        text-align: center;
+    header {
+        position: relative;
+        background-color: #f1f1f1;
         width: 100%;
+        height: 60px;
+    }
+    
+    .header-nav {
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    header h3 {
         display: none;
     }
-    .menu a {
-        display: block;
-        border-bottom: 1px solid;
-        color: black;
-         font-family: 'axiforma';
-        text-decoration: none;
+
+    .header-section-1 {
+        width: 50%;
+    }
+
+    .header-section-2 h3 {
+        display: none;
 
     }
-    
-    #forside, #webshop, #aarhus, #silke, #om, #kontakt {color: black;}
-    
-    #toggle {display: none;}
-    
-        #toggle:checked + .menu {
-        display: block;
+
+    .header-section-3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
+
+    .header-section-3 img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .sprog-valg {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sprog-valg p {
+        padding: 7px;
+    }
+
+
+    .logo-header {
+        width: 80%;
+    }
+
+    .menuheader a {
+        text-decoration: none;
+        padding: 10px;
+        color: black;
+    }
+    
+    .menuheader a:hover {
+        color: #ff6819;
+    }
+
+    label {
+        font-size: 26px;
+        line-height: 100px;
+        display: none;
+        width: 26px;
+        float: right;
+        color: #fff;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+
+    .menuheader label {
+        color: black;
+        display: block;
+        cursor: pointer;   
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        width: 55%;
+        display: none;
+        position: absolute;
+        font-family: 'Axiforma';
+        font-size: 20px;
+        background-color: white;
+    }
+
+
+    #forside,
+    #webshop,
+    #aarhus,
+    #silke,
+    #om,
+    #kontakt {
+        color: black;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    #toggle:checked + .menu {
+        display: flex;
+        position: absolute;
+
+    }
+
     .menuheader {
         position: relative;
         z-index: 2;
-       
+
     }
 
-    .logo {width: 30%; }
-    
-    
-    header {background-color: #f1f1f1;}
     /*--------------------------styles til clean sneaks århus underside------------------*/
 
 
@@ -154,8 +232,13 @@ h2,
         padding-right: 7px;
     }
 
-    .landing-page a:link,
-    a:visited {
+    .landing-page a:link {
+        color: white;
+        opacity: 0.6;
+        text-decoration: none;
+    }
+
+    .landing-page a:visited {
         color: white;
         opacity: 0.6;
         text-decoration: none;
@@ -442,7 +525,9 @@ h2,
         display: none;
     }
 
-    .storypige {display: none;}
+    .storypige {
+        display: none;
+    }
 
 
 
@@ -456,9 +541,13 @@ h2,
         margin-top: 10%;
     }
 
-    .deskaarhus {display: none;}
+    .deskaarhus {
+        display: none;
+    }
 
-    .desksilke {display: none;}
+    .desksilke {
+        display: none;
+    }
 
 
     /* webshop knappen*/
@@ -718,53 +807,104 @@ h2,
 
 
 
-    /*Clean Sneaks Forside / Landingpaoge*/
-    nav {
-    position: relative;
-    z-index: 1;
-    border-bottom: 1px solid #000000;
-    text-align: right;
-    height: 100px;
-    line-height: 100px;
-    background-color: #2d2c2c;
-    font-family: 'Roboto Slab', serif;
-}
+    /*Clean Sneaks Forside / Landingpage*/
 
-.menu {
-    margin: 0 30px 0 0;
-    width: 100%;
-}
+    /* ------ Header menu dekstop -------- */
+    
+    .header-nav {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
 
-.menu a {
-    clear: right;
-    text-decoration: none;
-    color: #fff;
-    margin: 0 10px;
-    margin-right: 1%;
-    line-height: 70px;
-    background-color: #2d2c2c;
-    font-size: 72%;
-}
+    header h3 {
+        font-family: 'Axiforma';
+        opacity: 0.4;
+        font-size: 10px;
+    }
 
-label {
-    margin: 0 40px 0 0;
-    font-size: 26px;
-    line-height: 100px;
-    display: none;
-    width: 26px;
-    float: right;
-    color: #fff;
-}
+    .header-section-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+    }
 
-#toggle {
-    display: none;
-}
+    .header-section-2 {
+        display: flex;
+        flex-direction: column;
+         align-items: center;
+    }
+
+    .header-section-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    
+    .header-section-3-2 {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header-section-3 img {
+        width: 30px;
+    }
+
+    .sprog-valg {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .sprog-valg p {
+        padding: 7px;
+    }
 
 
-/*Generelt på forsiden*/
+    .logo-header {
+        width: 80%;
+    }
+
+    .menuheader {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        font-family: 'Axiforma';
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
+    .menuheader a {
+        text-decoration: none;
+        padding-left: 20px;
+        color: black;
+    }
+
+     .menuheader a:hover {
+        color: #ff6819;
+    }
+
+    label {
+        margin: 0 40px 0 0;
+        font-size: 26px;
+        line-height: 100px;
+        display: none;
+        width: 26px;
+        float: right;
+        color: #fff;
+    }
+
+    #toggle {
+        display: none;
+    }
 
 
-.webshop {
+    /*Generelt på forsiden*/
+
+
+    .webshop {
         display: none;
     }
 
@@ -795,7 +935,9 @@ label {
 
 
 
-   .desktopimg, .aarhusrenseri, .silkeborgrenseri {
+    .desktopimg,
+    .aarhusrenseri,
+    .silkeborgrenseri {
         width: 90%;
     }
 
@@ -859,19 +1001,24 @@ label {
 
     /* renserierne knapper tekst på billederne*/
 
-    .mobilaarhus {display: none;}
-    .mobilsilke {display: none;}
+    .mobilaarhus {
+        display: none;
+    }
+
+    .mobilsilke {
+        display: none;
+    }
 
 
     .aarhuscontainer {
-         position: relative;
+        position: relative;
         text-align: center;
 
 
     }
 
     .aarhus_tekst {
-       position: absolute;
+        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -884,32 +1031,34 @@ label {
         border: solid;
         5px;
         border-color: #ff6819
-
-
     }
 
 
-     .aarhus_tekst p {
+    .aarhus_tekst p {
         font-size: 25px;
         text-align: center;
         text-transform: uppercase;
     }
 
-     .deskaarhus { transition: transform .2s}
+    .deskaarhus {
+        transition: transform .2s
+    }
 
-    .deskaarhus:hover { transform: scale(1.1)}
+    .deskaarhus:hover {
+        transform: scale(1.1)
+    }
 
 
 
-     .silkeborgcontainer {
-         position: relative;
+    .silkeborgcontainer {
+        position: relative;
         text-align: center;
 
 
     }
 
     .silkeborg_tekst {
-       position: absolute;
+        position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -922,30 +1071,36 @@ label {
         5px;
         opacity: 0.9;
         border-color: #ff6819
-
-
     }
 
 
-     .silkeborg_tekst p {
+    .silkeborg_tekst p {
         font-size: 25px;
         text-align: center;
         text-transform: uppercase;
     }
 
-       .desksilke { transition: transform .2s}
+    .desksilke {
+        transition: transform .2s
+    }
 
-    .desksilke:hover { transform: scale(1.1)}
+    .desksilke:hover {
+        transform: scale(1.1)
+    }
 
 
-      .renseripil {
+    .renseripil {
         color: #ff6819;
     }
 
 
     /*flexbox på desktop*/
 
-    .landingdeskmenu {display: flex; flex-direction: row; justify-content: space-between;}
+    .landingdeskmenu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
     /*Storytelling desktop*/
 
@@ -1108,8 +1263,8 @@ label {
         position: absolute;
         text-align: right;
         list-style: none;
-        bottom: 15%;
-        right: 4%;
+        bottom: 0%;
+        right: 1%;
     }
 
     .landing-page li {
@@ -1120,12 +1275,13 @@ label {
         padding-right: 7px;
     }
 
-    .landing-page a:link,
-    a:visited {
+    .landing-page a:link {
         color: white;
         opacity: 0.6;
         text-decoration: none;
     }
+
+    .landing-page a:visited {}
 
     .landing-page a:hover {
         color: #d1641d;
@@ -1462,8 +1618,12 @@ label {
     /*footer med nyhedsbrev*/
 
 
-    .nyheddesk {display: flex; flex-direction: column; }
-  .footerlanding {
+    .nyheddesk {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerlanding {
         margin-top: 20%;
         background-color: #f1f1f1;
     }
@@ -1479,7 +1639,7 @@ label {
 
 
     .mail {
-      width: 20%;
+        width: 20%;
         margin-left: 39.5%;
     }
 
@@ -1502,44 +1662,60 @@ label {
         margin-top: 10%;
     }
 
-    .facebook {width: 5%;}
-    .instagram {width: 5%;}
-    .handelsb {float: right; margin-right: 2%;}
-
-    .some {margin-left: 2%;}
-
-
-
-
-@media all and (min-width: 1100px) {
-
-
-    #test p {
-        line-height: 200%
+    .facebook {
+        width: 5%;
     }
 
-    .story1,
-    .citat,
-    .story3 {
-        padding-left: 5%;
-        padding-right: 5%;
+    .instagram {
+        width: 5%;
+    }
+
+    .handelsb {
+        float: right;
+        margin-right: 2%;
+    }
+
+    .some {
+        margin-left: 2%;
     }
 
 
-    .story1 {
-        padding-top: 16%;
+
+
+    @media all and (min-width: 1100px) {
+
+
+        #test p {
+            line-height: 200%
+        }
+
+        .story1,
+        .citat,
+        .story3 {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+
+        .story1 {
+            padding-top: 16%;
+        }
+
+        .citat {
+            padding-top: 5%;
+            text-align: center;
+        }
+
+        .story3 {
+            padding-top: 9%;
+        }
+
+        .landingoverskrift {
+            font-size: 250%;
+        }
+
+
+
+
+
     }
-
-    .citat {padding-top: 5%; text-align: center;}
-
-    .story3 {
-        padding-top: 9%;
-    }
-
-    .landingoverskrift {font-size: 250%;}
-
-
-
-
-
-}
