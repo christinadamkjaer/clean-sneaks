@@ -19,6 +19,10 @@
 
 /* ------------- GENERELT ------------- */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'arboria-bold', sans-serif;
     background-color: #fcfcfc;
@@ -36,7 +40,6 @@ h2,
 }
 
 /* -------- CleanSneaks Århus ------ */
-
 
 
 
@@ -310,6 +313,12 @@ h2,
     /* Hvor er drop-off boksen? */
 
 
+    .hvor-er-boksen-tekst h2 {
+        text-decoration: underline;
+        text-decoration-color: #ff6819;
+        margin: 5%;
+    }
+
     .map-container {
         position: relative;
         width: 90%;
@@ -362,13 +371,13 @@ h2,
     /* The expanding image container (positioning is needed to position the close button and the text) */
     .container {
         position: relative;
-        margin-left: 17%;
         width: 100%;
         display: none;
     }
 
     /* Expanding image text */
     #imgtext {
+        font-family: 'Axiforma';
         position: absolute;
         bottom: 20px;
         left: 10px;
@@ -381,7 +390,7 @@ h2,
         position: absolute;
         right: 5px;
         color: white;
-        font-size: 35px;
+        font-size: 50px;
         cursor: pointer;
     }
 
@@ -393,11 +402,11 @@ h2,
 
     /* Kontakt og åbningstider */
 
-    .kontakt-og-priser {
+    .kontakt-og-aabningstider {
         margin-top: 20%;
     }
 
-    .kontakt-og-priser h2 {
+    .kontakt-og-aabningstider h2 {
         padding-top: 5%;
         margin: 5%;
         text-align: center;
@@ -405,7 +414,7 @@ h2,
         text-decoration-color: #ff6819;
     }
 
-    .kontakt-og-priser p {
+    .kontakt-og-aabningstider p {
         text-align: center;
         font-size: 20px;
     }
@@ -1097,18 +1106,18 @@ label {
         font-size: 13px;
         line-height: 28px;
         position: absolute;
-        text-align: left;
+        text-align: right;
         list-style: none;
         bottom: 15%;
-        left: 4%;
+        right: 4%;
     }
 
     .landing-page li {
         border-style: solid;
         border-color: transparent;
-        border-left-width: 3px;
-        border-left-color: #d1641d;
-        padding-left: 7px;
+        border-right-width: 3px;
+        border-right-color: #d1641d;
+        padding-right: 7px;
     }
 
     .landing-page a:link,
@@ -1258,7 +1267,8 @@ label {
     }
 
     .anbefalinger-container {
-        position:
+        height: 500px;
+        overflow: hidden;
     }
 
     .anbefaling {
@@ -1267,29 +1277,27 @@ label {
         height: 100%;
         top: 0;
         left: 0;
-        transform: translate(25%, 0%);
+        transform: translate(33.33%, 0%);
     }
 
     .knap-hoejre {
-        position: relative;
         color: #fff;
         background-color: #1f2022;
         border: none;
         position: absolute;
         padding: 10px;
         top: 15%;
-        left: 80%
+        left: 82%
     }
 
     .knap-venstre {
-        position: relative;
         color: #fff;
         background-color: #1f2022;
         border: none;
         position: absolute;
         padding: 10px;
         top: 15%;
-        left: 20%;
+        left: 15%;
     }
 
     /* Twenty-twenty slider */
@@ -1300,20 +1308,27 @@ label {
     }
 
     .hvorfor-clean-sneaks-tekst {
-        width: 60%;
+        width: 50%;
+        margin: auto;
+        text-align: center;
         position: relative;
+
     }
 
     .hvorfor-clean-sneaks {
-        width: 50%;
+        width: 100%;
         display: flex;
-        justify-content: space-around;
-
+        flex-direction: column;
+        margin-top: 8%;
     }
 
 
 
     /* Hvor er drop-off boksen? */
+
+    .hvor-er-boksen-container {
+        margin-top: 8%;
+    }
 
     .map-og-guide {
         display: flex;
@@ -1386,14 +1401,17 @@ label {
 
     /* The expanding image container (positioning is needed to position the close button and the text) */
     .container {
-        position: relative;
-        width: 85%;
+        position: absolute;
+        width: 37%;
+        max-height: 55%;
+        overflow: hidden;
         display: none;
-        margin-top: 5%;
+        margin-top: 8%;
     }
 
     /* Expanding image text */
     #imgtext {
+        font-family: 'Axiforma';
         position: absolute;
         bottom: 20px;
         left: 10px;
@@ -1413,28 +1431,28 @@ label {
 
     /* Kontakt og pris */
 
-    .kontakt-og-priser {
+    .kontakt-og-aabningstider {
         display: flex;
-        margin-left: 8%;
-        margin-right: 8%;
         justify-content: space-around;
-        margin-bottom: 5%;
+        margin: 8%;
     }
 
-    .kontakt-og-priser h2 {
+    .kontakt-og-aabningstider h2 {
         text-decoration: underline;
         text-decoration-color: #ff6819;
         padding-top: 8%;
-        text-align: center;
     }
 
-    .kontakt-og-priser p {
+    .kontakt-og-aabningstider p {
         font-size: 20px;
+    }
+
+    .tekst-kontakt-og-aabningstider {
         text-align: center;
     }
 
     .galleri-grisk {
-        width: 45%;
+        width: 40%;
         padding-top: 3%;
         align-self: center;
     }
